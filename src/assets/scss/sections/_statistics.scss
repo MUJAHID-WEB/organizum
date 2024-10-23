@@ -1,0 +1,39 @@
+.statistics {
+    background-color: #f5f5f5; // Light background color
+    padding: 2rem 0; // Top and bottom padding
+    text-align: center; // Centered text
+  
+    .statistics-content {
+      max-width: 1200px; // Maximum width for content
+      margin: 0 auto; // Centering the content
+  
+      h2 {
+        font-size: 2.5rem; // Font size for the heading
+        margin-bottom: 1.5rem; // Margin below the heading
+      }
+  
+      .statistic-item {
+        display: inline-block; // Inline-block for horizontal alignment
+        margin: 1rem; // Margin around each item
+        padding: 1.5rem; // Padding inside each item
+        border: 1px solid #ddd; // Light border
+        border-radius: 10px; // Rounded corners
+        transition: transform 0.3s; // Smooth hover effect
+  
+        h3 {
+          font-size: 2rem; // Font size for statistics
+          color: #007bff; // Primary color for numbers
+        }
+  
+        p {
+          font-size: 1.2rem; // Font size for descriptions
+          color: #666; // Darker text color
+        }
+  
+        &:hover {
+          transform: scale(1.05); // Scale effect on hover
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Shadow on hover
+        }
+      }
+    }
+  }

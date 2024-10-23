@@ -1,0 +1,63 @@
+.industries {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  
+    .industries-content {
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #666;
+      }
+  
+      .industry-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+  
+        .industry-card {
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          flex: 1 1 200px; // Adjusts card width and allows wrapping
+          max-width: 300px;
+  
+          h3 {
+            font-size: 1.5rem;
+            color: #007bff; // Example color
+          }
+  
+          p {
+            font-size: 1rem;
+            color: #555;
+          }
+        }
+      }
+  
+      .learn-more {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #007bff; // Example button color
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1rem;
+  
+        &:hover {
+          background-color: #0056b3; // Darker shade for hover effect
+        }
+      }
+    }
+  }
