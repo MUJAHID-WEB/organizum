@@ -7,3 +7,12 @@
 @import '@/assets/scss/sections/_statistics';
 @import '@/assets/scss/sections/_industries';
 @import '@/assets/scss/sections/_footer';
+
+
+body{
+    margin: 0;
+}
+.containar{
+    max-width: 1280px;
+    margin: 0 auto;
+}

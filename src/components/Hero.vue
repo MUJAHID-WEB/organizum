@@ -1,9 +1,14 @@
 <template>
   <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Our Service</h1>
-      <p>Your solution for a great experience.</p>
-      <button>Get Started</button>
+    <div class="hero-content containar">
+      <div class="content">
+        <h1>All-in-One Transportation Management System: Improve Your Flows</h1>
+        <p>Our platform optimizes transportation management, from scheduling to real-time communication. It offers features like QR code sign-in, secure payments, and 24/7 support, ensuring smooth operations and enhanced customer service.</p>
+        <button>Create Organization</button>
+      </div>
+      <div class="hero-img">
+        <img src="/images/1.png" />
+      </div>
     </div>
   </section>
 </template>

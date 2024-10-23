@@ -1,5 +1,5 @@
 <template>
-  <section class="features">
+  <section class="features containar">
     <h2 class="features-title">Our Features</h2>
     <div class="features-content">
       <div class="feature-item" v-for="feature in features" :key="feature.id">
