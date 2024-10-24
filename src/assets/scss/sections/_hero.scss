@@ -21,6 +21,7 @@
       margin: 100px 0;
 
       .content{
+        flex: 1;
         text-align: left;
 
         h1 {
@@ -34,31 +35,86 @@
         }
         button {
           margin-top: 20px;
-          padding: 10px 20px;
+          padding: 20px;
           background-color: #2F85BB;
+          border-radius: 12px;
           border: none;
           color: white;
           cursor: pointer;
+
+          &:hover{
+            background-color: #EE6E27;
+          }
         }
       }
 
       .hero-img{
+        position: relative;
+        flex: 1;
         animation: move 1.5s infinite alternate;
         img{
           max-width: 500px;
    
         }
+
+        .shape-style1 {
+          animation: animation-one 5s linear infinite;
+          left: 0;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .shape-style2 {
+          animation: animation-two 5s linear infinite;
+          right: 0;
+          position: absolute;
+          bottom: -80px;
+          z-index: -1;
+
+          img {
+            max-width: 100%;
+          }
+        }
       }
-     
-    }
+    
+      }
   }
-  
+
 
   @keyframes move {
     0% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-10px); // Move the wave left
+      transform: translateY(-10px); 
+    }
+  }
+
+  @keyframes animation-one {
+    0% {
+      transform: translateY(0) translate(0);
+    }
+    50% {
+      transform: translateY(0) translate(-20px);
+    }
+    100% {
+      transform: translateY(0) translate(0);
+    }
+  }
+
+  @keyframes animation-two {
+    0% {
+      transform: translateY(0) translate(0);
+    }
+    50% {
+        transform: translateY(-15px) translate(0);
+    }
+    100% {
+        transform: translateY(0) translate(0);
     }
   }

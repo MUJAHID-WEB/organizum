@@ -1,22 +1,51 @@
 <template>
-  <section class="statistics">
-    <div class="statistics-content">
-      <h2>Our Achievements</h2>
-      <div class="statistic-item">
-        <h3>100+</h3>
-        <p>Projects Completed</p>
+  <section class="counterup">
+    <div class="container content">
+      <div class="counterup_title">
+          <h2 class="title">
+              Some of our Interesting facts
+          </h2>
       </div>
-      <div class="statistic-item">
-        <h3>1500+</h3>
-        <p>Satisfied Clients</p>
+      <div class="count">
+          <div class="counterup_box">
+              <span class="counterup_number">
+                2,500+
+              </span>
+              <p class="counterup_text">
+                  Customers
+              </p>
+          </div>
+
+          <div class="counterup_box">
+              <span class="counterup_number">
+                2,500+
+              </span>
+              <p class="counterup_text">
+                  Customers
+              </p>
+          </div>
+
+          <div class="counterup_box">
+              <span class="counterup_number">
+                2,500+
+              </span>
+              <p class="counterup_text">
+                  Customers
+              </p>
+          </div>
+
+          <div class="counterup_box">
+              <span class="counterup_number">
+                2,500+
+              </span>
+              <p class="counterup_text">
+                  Customers
+              </p>
+          </div>
+
       </div>
-      <div class="statistic-item">
-        <h3>5</h3>
-        <p>Years of Experience</p>
-      </div>
-      <div class="statistic-item">
-        <h3>24/7</h3>
-        <p>Customer Support</p>
+      <div class="counterup_shape">
+          <img src="/images/stats.png" alt="Shape" class="layer" >
       </div>
     </div>
   </section>
@@ -24,7 +53,7 @@
 
 <script>
 export default {
-  name: 'Statistics',
+    name: 'Statistics',
 };
 </script>
 
