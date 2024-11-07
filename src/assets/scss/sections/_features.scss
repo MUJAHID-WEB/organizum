@@ -1,50 +1,52 @@
-
 .features {
-    padding: 100px 0;
-    text-align: center;
-  
-    &-title {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      color: #333;
-    }
-  
-    &-content {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px; // Adjust gap between feature items
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
+  background-image: url('/public/images/fbg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px 0;
+  text-align: center;
+
+  .features-title {
+    font-size: 60px;
+    line-height: 65px;
+    color: #121421;
+    font-weight: 700;
+    margin-bottom: 94px;
+  }
+
+  .features-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
     .feature-item {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      width: 300px; // Set a fixed width for feature items
-      transition: transform 0.3s;
-  
-      &:hover {
-        transform: translateY(-5px); // Add hover effect
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      background-color: #f6f7fc;
+      border-radius: 25px;
+      padding: 55px 35px;
+      max-width: 300px;
+      position: relative;
+
+      .line {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: 1;
       }
-  
-      .feature-icon {
-        width: 50px; // Adjust icon size
-        height: 50px; // Adjust icon size
-        margin-bottom: 15px;
-      }
-  
+
       h3 {
-        font-size: 1.5rem;
-        color: #007bff; // Change to your theme color
-        margin-bottom: 10px;
+        font-size: 27px;
+        color: #121421;
+        font-weight: 700;
       }
-  
+
       p {
-        color: #666;
-        font-size: 1rem;
+        font-size: 18px;
+        color: #121421;
+        font-weight: 400;
       }
     }
   }
+}

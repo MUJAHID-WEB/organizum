@@ -18,19 +18,16 @@
     </div>
 
     <!-- Features Section -->
-    <Features />
+    
 
   </section>
 </template>
 
 <script>
-import Features from "@/components/Features.vue";
+
 
 export default {
   name: 'Hero',
-  components: {
-    Features,
-  },
 };
 </script>
 
