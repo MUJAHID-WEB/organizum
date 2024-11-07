@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <Hero />
-    <Features />
     <PricingPlans />
     <HowItWorks />
     <Statistics />
@@ -14,7 +13,6 @@
 <script>
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
-import Features from './components/Features.vue';
 import PricingPlans from './components/PricingPlans.vue';
 import HowItWorks from './components/HowItWorks.vue';
 import Statistics from './components/Statistics.vue';
@@ -25,7 +23,6 @@ export default {
   components: {
     Header,
     Hero,
-    Features,
     PricingPlans,
     HowItWorks,
     Statistics,

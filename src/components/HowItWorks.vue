@@ -1,6 +1,6 @@
 <template>
   <section class="how-it-works">
-    <div class="how-it-works-content">
+    <div class="how-it-works-content container">
       <h2>How It Works</h2>
       <p>Our simple 3-step process to get you started:</p>
       <div class="steps">

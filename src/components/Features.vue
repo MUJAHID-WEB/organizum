@@ -1,7 +1,7 @@
 <template>
-  <section class="features container">
+  <section class="features ">
     <h2 class="features-title">Our Features</h2>
-    <div class="features-content">
+    <div class="features-content container">
       <div class="feature-item" v-for="feature in features" :key="feature.id">
         <img :src="feature.image" alt="Feature Icon" class="feature-icon" />
         <h3>{{ feature.title }}</h3>

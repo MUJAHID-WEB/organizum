@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <nav>
+    <nav class="container">
       <!-- Add your nav content here -->
       <img src="/images/logo.png" alt="Logo" />
       <ul>
