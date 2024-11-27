@@ -4,42 +4,144 @@
         <div class="pricing-plans">
             <h2>Choose Your Plan</h2>
             <div class="plans-container">
-                <div class="plan">
-                    <h3>Basic</h3>
-                    <p class="price">$19/month</p>
-                    <p>Includes basic features</p>
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                    </ul>
-                    <button class="btn">Select Plan</button>
+                <div class="plan basic">
+                    <div class="circle1">
+                    </div>
+                    <div class="circle2">
+                    </div>
+                    <div class="price_head">
+                        <img class="price" src="/images/price1.svg" alt="price">
+                        <h3>Basic Plan</h3>
+                        <h5 class="price_monthly">
+                            $20.00
+                            <span>
+                                /Monthly
+                            </span>
+                        </h5>
+                        <h5 class="price_yearly">
+                            $120.00
+                            <span>
+                                /Yearly
+                            </span>
+                        </h5>
+                    </div>
+                    
+                    <div class="price_features">
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+                    
+                    </div>
+                   
+                    <a href="#" class="price_btn">
+                        Purchase Now
+                    </a>
+                    
+                    
                 </div>
-                <div class="plan">
-                    <h3>Standard</h3>
-                    <p class="price">$39/month</p>
-                    <p>Includes standard features</p>
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                    </ul>
-                    <button class="btn">Select Plan</button>
+
+                <div class="plan regular">
+                    <div class="circle1">
+                    </div>
+                    <div class="circle2">
+                    </div>
+                    <div class="price_head">
+                        <img class="price" src="/images/price2.svg" alt="price">
+                        <h3>Basic Plan</h3>
+                        <h5 class="price_monthly">
+                            $20.00
+                            <span>
+                                /Monthly
+                            </span>
+                        </h5>
+                        <h5 class="price_yearly">
+                            $120.00
+                            <span>
+                                /Yearly
+                            </span>
+                        </h5>
+                    </div>
+                    
+                    <div class="price_features">
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+                    
+                    </div>
+                   
+                    <a href="#" class="price_btn">
+                        Purchase Now
+                    </a>
+                    
+                    
                 </div>
-                <div class="plan">
-                    <h3>Premium</h3>
-                    <p class="price">$59/month</p>
-                    <p>Includes all features</p>
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                        <li>Feature 5</li>
-                    </ul>
-                    <button class="btn">Select Plan</button>
+
+                <div class="plan gold">
+                    <div class="circle1">
+                    </div>
+                    <div class="circle2">
+                    </div>
+                    <div class="price_head">
+                        <img class="price" src="/images/price3.svg" alt="price">
+                        <h3>Basic Plan</h3>
+                        <h5 class="price_monthly">
+                            $20.00
+                            <span>
+                                /Monthly
+                            </span>
+                        </h5>
+                        <h5 class="price_yearly">
+                            $120.00
+                            <span>
+                                /Yearly
+                            </span>
+                        </h5>
+                    </div>
+                    
+                    <div class="price_features">
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature_gold.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+
+                        <div class="p_feature">
+                            <img class="pf_img" src="/images/price_feature_gold.svg" alt="price_feature">
+                            <p class="pf_points">
+                                Social media advertising
+                            </p>        
+                        </div>
+                    
+                    </div>
+                   
+                    <a href="#" class="price_btn">
+                        Purchase Now
+                    </a>
+                    
+                    
                 </div>
+               
             </div>
 
         </div>
