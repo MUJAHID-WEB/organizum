@@ -116,7 +116,7 @@ export default {
                     answer: 'A courier management module capable of real time tracking of parcels, determination of the best route for delivery and even notifying the customers.',
                 },
             ],
-            activeIndex: null,
+            activeIndex: 0,
         };
     },
     methods: {

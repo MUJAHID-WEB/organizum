@@ -1,13 +1,21 @@
 <template>
   <header class="header">
-    <nav class="container">
-      <!-- Add your nav content here -->
-      <img src="/images/logo.png" alt="Logo" />
+    <nav class="">
+      <img src="/images/organizum.webp" alt="logo">
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <!-- Add more links -->
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
       </ul>
+      <a class="btn" href="#">
+        Get Started
+      </a>
     </nav>
   </header>
 </template>

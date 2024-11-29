@@ -1,5 +1,5 @@
 .features {
-  background-image: url('/public/images/fbg.png');
+  // background-image: url('/public/images/fbg.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -17,6 +17,7 @@
   .features-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
 
     .feature-item {
@@ -26,8 +27,12 @@
       background-color: #f6f7fc;
       border-radius: 25px;
       padding: 55px 35px;
-      max-width: 300px;
+      max-width: 25%;
       position: relative;
+
+      &:hover {
+        background-color: #FAF8F7;
+      }
 
       .line {
         bottom: 0;

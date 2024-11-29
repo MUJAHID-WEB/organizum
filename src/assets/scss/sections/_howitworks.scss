@@ -1,67 +1,107 @@
 .how-it-works {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
+    padding: 100px 20px;
+    background-color: #FAF8F7;
     text-align: center;
   
     h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 3.75rem;
+      margin-bottom: 5rem;
     }
-  
-    p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
-      color: #666;
-    }
-  
-    .steps {
+
+
+    .work_steps {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-  
+      flex-direction: column;
+      gap: 50px;
+    
+      .steps {
+        display: flex;
+        align-items: center;
+        gap: 20px; 
+        overflow: hidden;
+      }
+
+      .steps:nth-child(2) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px; 
+        overflow: hidden;
+      }
+    
       .step {
-        flex: 1 1 30%; /* Allow flexibility */
-        margin: 20px;
-        padding: 20px;
+        flex: 1; 
+        height: 300px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-  
-        img {
-          width: 60px; /* Adjust as necessary */
-          margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center; 
+        align-items: center;
+    
+        &:first-child {
+          flex: 0 0 500px; 
+
+          h3 {
+            transform: rotate(0deg) translateY(0%); 
+          }
+
+          p{
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            transform: translateX(0);
+          }
+
         }
-  
+    
         h3 {
-          font-size: 1.5em;
-          margin: 10px 0;
+          font-size: 30px;
+          font-weight: bold;
+          opacity: 1;
+          visibility: visible;
+          transform: rotate(-90deg) translateY(0%); 
+          transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
         }
-  
+    
         p {
-          font-size: 1em;
-          color: #444;
+          font-size: 16px;
+          opacity: 0;
+          visibility: hidden;
+          display: none;
+          transform: translateX(-100%); 
+          transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
         }
-  
+    
         &:hover {
-          transform: translateY(-5px);
+          flex: 0 0 300px; 
+    
+          h3 {
+            transform: rotate(0deg) translateY(0); 
+          }
+    
+          p {
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            transform: translateX(0);
+          }
         }
       }
-    }
-  
-    .get-started-button {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: #0056b3;
+    
+      .steps:hover .step:first-child {
+        flex: 0 0 300px; 
       }
     }
+    
+  
   }

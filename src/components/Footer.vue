@@ -7,7 +7,7 @@
         <a href="#contact">Contact</a>
         <a href="#privacy">Privacy Policy</a>
       </div>
-      <div class="footer-social">
+      <!-- <div class="footer-social">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <img src="/images/facebook-icon.png" alt="Facebook" />
         </a>
@@ -17,7 +17,7 @@
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
           <img src="/images/instagram-icon.png" alt="Instagram" />
         </a>
-      </div>
+      </div> -->
       <p>&copy; {{ currentYear }} Your Company Name. All rights reserved.</p>
     </div>
   </footer>

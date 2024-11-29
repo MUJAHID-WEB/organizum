@@ -1,28 +1,56 @@
 @import '@/assets/scss/_variables';
 
 .header {
-    background-color: $primary-color;
+    background-color: #FAF8F7;
+    
+
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 1600px;
+      margin: 0 auto;
+
       img{
         height: 40px;
-        width: 40px;
-        margin-left: 20px;
+        width: auto;
       }
       ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-image: url('/public/images/header-bg.webp');
+        --background-overlay: '';
+        background-position: top center;
+        background-repeat: no-repeat;
+        min-width: 55%;
+        min-height: 100px;
+        margin: 0;
         li {
+          list-style: none;
           margin-right: 20px;
           a {
-            color: $text-color;
+            color: #555;
             text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            border: 1px solid #1212121F;
+            padding: 9.5px 18px;
+            border-radius: 15px;
             &:hover {
               color: $highlight-color;
             }
           }
         }
+      }
+      .btn{
+        padding: 16px 20px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: #000;
+        border-radius: 15px;
       }
     }
   }
