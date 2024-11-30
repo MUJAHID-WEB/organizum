@@ -67,7 +67,16 @@
   }
 
   @media (max-width:768px){
-    .counterup .content .count .counterup_box{
-      width: 100%;
+    .counterup .content {
+      .counterup_title .title{
+        font-size: 40px;
+        line-height: 55px;
+      }
+
+      .count .counterup_box{
+        width: 100%;
+      }
     }
+    
+   
   }
