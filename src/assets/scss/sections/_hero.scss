@@ -16,6 +16,8 @@
       gap: 1rem;
       margin: 100px auto;
       max-width: 1600px;
+      padding: 0 16px;
+
 
       .hero_left{
         display: flex;
@@ -176,6 +178,149 @@
       }
     
       }
+  }
+
+  @media (max-width: 1450px){
+    .hero {
+      
+      .hero-content {
+
+        .hero_left{
+          padding-top: 60px;
+  
+          .left_top{
+            width: 35%;
+    
+            p{
+              font-size: 20px;
+            }
+          }
+  
+          img{
+            max-width: 60px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+          }
+  
+          .left_bottom{
+            padding: 30px;
+            gap: 8px;
+            margin-top: 40px;
+            max-width: 120px;
+            h3{
+              font-size: 35px;
+            }
+            p{
+              font-size: 15px;
+            }
+            
+         
+          }
+        }
+  
+        .content{
+          h1 {
+            font-size: 4rem;
+            line-height: .92em;
+          }
+          p {
+            font-size: 1.25rem;
+          }
+          a{
+            padding: 20px 40px;
+          }
+        }
+
+        }
+    }
+  }
+
+  @media (max-width: 1024px){
+    .hero {
+      
+      .hero-content {
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        margin: 80px auto;
+
+        .hero-img {
+          display: none;
+
+        }
+
+        }
+    }
+  }
+
+
+  @media (max-width: 768px){
+    .hero {
+      
+      .hero-content {
+        flex-direction: column;
+        align-items: start;
+        gap: 3rem;
+
+        .hero_left{
+          width: 100%;
+          padding-top: 0;
+          order: 3;
+  
+          .left_top{
+            width: 35%;
+    
+            p{
+              font-size: 35px;
+            }
+          }
+  
+          img{
+            max-width: 160px;
+            padding-top: 30px;
+            padding-bottom: 60px;
+          }
+  
+          .left_bottom{
+            padding: 30px;
+            gap: 8px;
+            margin-top: 0;
+            width: 100%;
+            max-width: 50%;
+            h3{
+              font-size: 55px;
+            }
+            p{
+              font-size: 35px;
+              line-height: 44px;
+            }
+            
+         
+          }
+        }
+  
+        .content{
+          width: 100%;
+          h1 {
+            font-size: 4rem;
+            line-height: .92em;
+          }
+          p {
+            font-size: 1.25rem;
+          }
+          a{
+            padding: 20px 40px;
+          }
+        }
+
+        .hero-img {
+          display: block;
+          width: 100%;
+
+        }
+
+        }
+    }
   }
 
 
