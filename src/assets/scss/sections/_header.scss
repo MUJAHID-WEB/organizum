@@ -105,6 +105,10 @@
   }
 
 
+
+  @media (max-width: 1024px) {
+
+
   .mobile-menu {
     display: none;
     position: absolute;
@@ -134,10 +138,9 @@
 
   .mobile-menu.active {
     display: flex;
-    width: -webkit-fill-available;
+    // width: -webkit-fill-available;
   }
-
-  @media (max-width: 1024px) {
+  
     ul {
       display: none;
     }
