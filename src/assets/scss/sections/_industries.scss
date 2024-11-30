@@ -191,6 +191,19 @@
         .faq-content{
           margin-bottom: 0;
           max-width: 100%;
+
+          .accordion-content .accordion .card {
+            .accordion-body{
+              font-size: 14px;
+              line-height: 22px;
+            }
+
+          .card-header {
+            .accordion-button{
+              font-size: 20px;
+            }
+          } 
+        } 
         }
 
         .layer-shape-mobile{
