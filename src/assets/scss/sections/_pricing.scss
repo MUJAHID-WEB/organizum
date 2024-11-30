@@ -1,7 +1,7 @@
 .pricing-plans {
   background-color: #FFF;
     text-align: center;
-    padding: 10rem 0;
+    padding: 10rem 1rem;
 
   
     h2 {
@@ -144,6 +144,18 @@
 
       }
     }
+}
+
+@media (max-width: 1024px){
+  .pricing-plans .plans-container .plan.regular{
+    scale: 1;
+  }
+}
+
+@media (max-width: 490px){
+  .pricing-plans .plans-container .plan{
+    width: 100%;
+  }
 }
 
 

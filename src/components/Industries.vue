@@ -30,6 +30,13 @@
                             </div>
                         </div>
                     </div>
+
+                
+                    <div class="layer-shape-mobile" data-aos="fade-up" data-aos-duration="1000">
+                        <img class="img-shape1 tilt-animation" src="../../public/images/faq1.jpg" alt="Virtuf-Image">
+                    </div>
+                        
+              
                 </div>
     
                 <div class="layer-shape">

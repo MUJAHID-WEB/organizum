@@ -260,7 +260,7 @@
       .hero-content {
         flex-direction: column;
         align-items: start;
-        gap: 3rem;
+        gap: 2.75rem;
 
         .hero_left{
           width: 100%;
@@ -320,6 +320,12 @@
         }
 
         }
+    }
+  }
+
+  @media (max-width: 480px){
+    .hero .hero-content .content h1{
+      font-size: 3rem;
     }
   }
 

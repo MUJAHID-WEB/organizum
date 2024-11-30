@@ -65,3 +65,9 @@
   
     }
   }
+
+  @media (max-width:768px){
+    .counterup .content .count .counterup_box{
+      width: 100%;
+    }
+  }

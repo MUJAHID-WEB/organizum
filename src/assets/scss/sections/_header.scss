@@ -94,3 +94,11 @@
     }
   }
   
+  @media (max-width: 480px){
+    .header nav .nav_btn .btn{
+      display: none;
+    }
+    .header nav .nav_btn button{
+      border-radius: 5px;
+    }
+  }
