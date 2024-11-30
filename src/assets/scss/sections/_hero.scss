@@ -309,7 +309,7 @@
             font-size: 1.25rem;
           }
           a{
-            padding: 20px 40px;
+            padding: 20px;
           }
         }
 
@@ -325,7 +325,8 @@
 
   @media (max-width: 480px){
     .hero .hero-content .content h1{
-      font-size: 3rem;
+      font-size: 2.5rem;
+      line-height: 1.1em;
     }
   }
 
