@@ -65,8 +65,9 @@
         }
     
         h3 {
-          font-size: 30px;
+          font-size: 40px;
           font-weight: bold;
+          width: max-content;
           opacity: 1;
           visibility: visible;
           transform: rotate(-90deg) translateY(0%); 
@@ -74,7 +75,7 @@
         }
     
         p {
-          font-size: 16px;
+          font-size: 20px;
           opacity: 0;
           visibility: hidden;
           display: none;
@@ -134,12 +135,12 @@
           }
       
           h3 {
-            font-size: 40px;
+            font-size: 30px;
             transform: rotate(0deg) translateY(0%); 
           }
       
           p {
-            font-size: 25px;
+            font-size: 20px;
             opacity: 1;
             visibility: visible;
             display: block;
@@ -158,5 +159,13 @@
 
     }
     
-    
+  }
+
+  @media (max-width:480px) {
+    .how-it-works {
+      h2{
+        font-size: 40px;
+      line-height: 55px;
+      }
+    }
   }

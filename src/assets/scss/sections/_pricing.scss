@@ -153,9 +153,18 @@
 }
 
 @media (max-width: 490px){
-  .pricing-plans .plans-container .plan{
-    width: 100%;
+  .pricing-plans {
+    h2{
+      font-size: 40px;
+      line-height: 55px;
+    }
+
+    .plans-container .plan{
+      width: 100%;
+    }
   }
+  
+  
 }
 
 
