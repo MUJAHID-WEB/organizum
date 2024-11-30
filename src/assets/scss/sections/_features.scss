@@ -29,9 +29,12 @@
       padding: 55px 35px;
       max-width: 25%;
       position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
         background-color: #FAF8F7;
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
       }
 
       .line {

@@ -52,8 +52,14 @@
             border: 1px solid #1212121F;
             padding: 9.5px 18px;
             border-radius: 15px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
             &:hover {
               color: $highlight-color;
+              background-color: #FAF8F7;
+              transform: translateY(-80px);
+              box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); 
             }
           }
         }

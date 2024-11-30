@@ -35,7 +35,14 @@
           padding: 40px 30px;
           border-radius: 10px;
           background-color: #FFF;
-          box-shadow:  0 8px 46px 0px rgba(29, 53, 87, 0.08);
+          box-shadow: 8px 8px 10px 0px rgba(29, 53, 87, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+          &:hover {
+            background-color: #FAF8F7;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+          }
 
           .counterup_number{
             font-size: 40px;

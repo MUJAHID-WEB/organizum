@@ -24,7 +24,9 @@
 
       </div>
       <div class="content">
-        <h1>All-in-One Transportation Management System: Improve Your Flows</h1>
+        <h1>
+          All-in-One Transportation Management System: Improve Your Flows
+        </h1>
         <p>Our platform optimizes transportation management, from scheduling to real-time communication. It offers features like QR code sign-in, secure payments, and 24/7 support, ensuring smooth operations and enhanced customer service.</p>
         <a href="#">Create Organization</a>
       </div>

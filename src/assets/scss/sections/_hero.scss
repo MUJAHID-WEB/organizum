@@ -61,6 +61,8 @@
           margin-top: 60px;
           max-width: 150px;
           text-align: left;
+          animation: slide-in-left 1s ease-out forwards;
+
 
 
           h3{
@@ -99,12 +101,17 @@
           color: #000;
           font-weight: 700;
           line-height: .92em;
+          overflow: hidden;
+          animation: 2s anim-lineUp ease-out forwards;
+          
         }
         p {
           font-size: 1.5rem;
           font-weight: 400;
           margin-top: 10px;
           color: #555;
+          overflow: hidden;
+          animation: 3s anim-lineUp ease-out forwards;
         }
         a {
           text-decoration: none;
@@ -120,6 +127,8 @@
           text-transform: capitalize;
           line-height: 1.3em;
           color: #000;
+          overflow: hidden;
+          animation: 4s anim-lineUp ease-out forwards;
 
           &:hover{
             background-color: #000;
@@ -143,6 +152,9 @@
             height: auto;
             width: 100%; 
             clip-path: polygon(25% 0, 100% 0%, 75% 100%, 0% 100%); 
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slide-in-right 1s ease-out forwards;
     
             img {
                 width: 100%; 
@@ -363,3 +375,45 @@
         transform: translateY(0) translate(0);
     }
   }
+
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
