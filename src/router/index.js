@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue';
-import BlackPage from '../components/oarganizum/OrganizumHome.vue';
-import BluePage from '../components/tour_booking/BluePage.vue';
+import OrganizumHome from '../components/oarganizum/OrganizumHome.vue';
+import TourBookingHome from '../components/tour_booking/TourBookingHome.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/organizum', component: BlackPage },
-  { path: '/tour_booking', component: BluePage }
+  { path: '/organizum', component: OrganizumHome },
+  { path: '/tour_booking', component: TourBookingHome }
 ];
 
 const router = createRouter({
