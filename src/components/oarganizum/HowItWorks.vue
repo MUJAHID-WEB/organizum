@@ -52,5 +52,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_howitworks.scss";
+@import "@/assets/scss/organizum/_howitworks.scss";
 </style>

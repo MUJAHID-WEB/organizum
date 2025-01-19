@@ -4,7 +4,7 @@
     <div class="features-content container">
       <div class="feature-item" 
       v-for="feature in features" :key="feature.id">
-         <img class="line" src="../../public/images/line.png" alt="">
+         <img class="line" src="../../../public/images/line.png" alt="">
         <h3>{{ feature.title }}</h3>
         <p>{{ feature.description }}</p>
       </div>
@@ -71,5 +71,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_features.scss";
+@import "@/assets/scss/organizum/_features.scss";
 </style>

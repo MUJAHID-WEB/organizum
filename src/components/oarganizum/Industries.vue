@@ -33,7 +33,7 @@
 
                 
                     <div class="layer-shape-mobile" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="img-shape1 tilt-animation" src="../../public/images/faq1.jpg" alt="Virtuf-Image">
+                        <img class="img-shape1 tilt-animation" src="../../../public/images/faq1.jpg" alt="Virtuf-Image">
                     </div>
                         
               
@@ -41,20 +41,20 @@
     
                 <div class="layer-shape">
                     <div class="layer-shape-one" data-aos="fade-up" data-aos-duration="1000">
-                        <img class="img-shape1 tilt-animation" src="../../public/images/faq1.jpg" alt="Virtuf-Image">
+                        <img class="img-shape1 tilt-animation" src="../../../public/images/faq1.jpg" alt="Virtuf-Image">
                     </div>
                     <div class="layer-shape-two">
-                        <img src="../../public/images/circle-line2.png" alt="Virtuf-Image">
+                        <img src="../../../public/images/circle-line2.png" alt="Virtuf-Image">
                     </div>
                     <div class="layer-shape-three">
-                        <img src="../../public/images/circle-line3.png" alt="Virtuf-Image">
+                        <img src="../../../public/images/circle-line3.png" alt="Virtuf-Image">
                     </div>
 
                     <div class="layer-shape-four">
-                        <img src="../../public/images/circle-line2.png" alt="Virtuf-Image">
+                        <img src="../../../public/images/circle-line2.png" alt="Virtuf-Image">
                     </div>
                     <div class="layer-shape-five">
-                        <img src="../../public/images/circle-line3.png" alt="Virtuf-Image">
+                        <img src="../../../public/images/circle-line3.png" alt="Virtuf-Image">
                     </div>
                 </div>
             </div>
@@ -135,6 +135,6 @@ export default {
 </script>
   
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_industries.scss";
+@import "@/assets/scss/organizum/_industries.scss";
 </style>
   

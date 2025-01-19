@@ -59,6 +59,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_hero.scss";
+@import "@/assets/scss/organizum/_hero.scss";
 </style>
 

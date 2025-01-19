@@ -35,5 +35,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_footer.scss";
+@import "@/assets/scss/organizum/_footer.scss";
 </style>

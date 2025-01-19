@@ -50,5 +50,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_header.scss";
+@import "@/assets/scss/organizum/_header.scss";
 </style>

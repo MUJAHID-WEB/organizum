@@ -156,7 +156,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/sections/_pricing.scss";
+@import "@/assets/scss/organizum/_pricing.scss";
 </style>
 
   
