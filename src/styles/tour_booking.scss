@@ -1,0 +1,23 @@
+@import '@/assets/scss/_variables';
+@import '@/assets/scss/tour_booking/_header';
+@import '@/assets/scss/tour_booking/_hero';
+@import '@/assets/scss/tour_booking/_features';
+@import '@/assets/scss/tour_booking/_pricing';
+@import '@/assets/scss/tour_booking/_howitworks';
+@import '@/assets/scss/tour_booking/_statistics';
+@import '@/assets/scss/tour_booking/_industries';
+@import '@/assets/scss/tour_booking/_footer';
+
+
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    margin: 0;
+}

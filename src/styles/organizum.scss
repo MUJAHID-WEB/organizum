@@ -1,0 +1,23 @@
+@import '@/assets/scss/_variables';
+@import '@/assets/scss/organizum/_header';
+@import '@/assets/scss/organizum/_hero';
+@import '@/assets/scss/organizum/_features';
+@import '@/assets/scss/organizum/_pricing';
+@import '@/assets/scss/organizum/_howitworks';
+@import '@/assets/scss/organizum/_statistics';
+@import '@/assets/scss/organizum/_industries';
+@import '@/assets/scss/organizum/_footer';
+
+
+body{
+    margin: 0;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    margin: 0;
+}
