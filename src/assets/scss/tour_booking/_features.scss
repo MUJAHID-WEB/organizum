@@ -1,78 +1,89 @@
+@import '@/assets/scss/_variables';
+
 .features-section{
   // background-image: url('/images/tour_booking/feature-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  color: #000;
-  padding: 10rem 0;
+  color: var(--color-black);
+  padding: 12rem 0;
 
-  // @include desktop-small {
-  //   padding: 7rem 1rem;
-  // }
+  @include desktop-small {
+    padding: 7rem 1rem;
+  }
 
   .features-wrapper {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
 
-    // @include desktop-small {
-    //   flex-direction: column;
-    //   padding: 10rem 0;
-    // }
+    @include desktop-small {
+      flex-direction: column;
+      // padding: 10rem 0;
+    }
 
     .feature-left{
-      flex-basis: 45%;
+      flex-basis: 40%;
       position: relative;
 
-      // @include desktop-small {
-      //   flex-basis: 100%;
-      // }
+      @include desktop-small {
+        flex-basis: 100%;
+      }
 
       .feature-left-bottom-icon {
         position: absolute;
         bottom: 0%;
-        left: 0%;
+        left: 44%;
 
-        // @include desktop-small {
-        //   display: none;
-        // }
+        @include desktop-small {
+          display: none;
+        }
         
       }
 
       .subtitle {
         background: rgba(0, 0, 0, 0.1);
         padding: 8px 10px;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        letter-spacing: normal;
-        font-weight: 700;
+
+        @include typography('display-xs', bold); 
         display: inline;
         border-radius: 8px;
 
-        // @include desktop-small {
-        //   align-self: center;
-        //   justify-self: center;
-        // }
+        @include desktop-small {
+          align-self: center;
+          justify-self: center;
+        }
       }
 
       .title {
         position: relative;
-        line-height: 3.75rem;
-        letter-spacing: -0.02em;
-        font-weight: 700;
+        @include typography(display-lg, bold);
         margin-top: 18px;
         margin-bottom: 24px;
 
-        // @include desktop-small {
-        //   @include typography('display-md', bold);
-        // }
+        @include desktop-small {
+          @include typography('display-md', bold);
+        }
       }
 
       .brief {
-        font-size: 1.25rem;
-        line-height: 1.875rem;
-        letter-spacing: normal;
-        font-weight: 400;
+        @include typography(text-xl, regular);
+      }
+
+      .block-title {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--color-primary);
+        @include typography(display-xxl, bold);
+        display: flex;
+        color: transparent;
+        text-transform: uppercase;
+        color: var(--color-white);
+        transform: rotate(270deg) translateY(-15%) translateX(-80%);
+        transform-origin: left top;
+
+        @include desktop-small{
+          display: none;
+        }
       }
     }
 
@@ -82,9 +93,9 @@
       flex-wrap: wrap;
       gap: 1.5rem;
 
-      // @include desktop-small {
-      //   flex-basis: 100%;
-      // }
+      @include desktop-small {
+        flex-basis: 100%;
+      }
 
       .feature-item {
         flex-basis: 48%;
@@ -92,23 +103,17 @@
         flex-direction: column;
         gap: 2rem;
 
-        // @include desktop-small {
-        //   flex-basis: 100%
-        // }
+        @include desktop-small {
+          flex-basis: 100%
+        }
 
         .title {
-          font-size: 1.875rem;
-          line-height: 2.375rem;
-          letter-spacing: normal;
-          font-weight: 700;
-
+          @include typography(display-sm, bold);
+          height: 75px;
         }
 
         .brief {
-          font-size: 1.125rem;
-          line-height: 1.75rem;
-          letter-spacing: normal;
-          font-weight: 400;
+          @include typography(text-lg, regular);
         }
       }
     }

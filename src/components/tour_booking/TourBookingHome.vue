@@ -3,9 +3,9 @@
     <Header />
     <Hero />
     <Features />
-    <PricingPlans />
     <HowItWorks />
     <Statistics />
+    <PricingPlans />
     <Industries />
     <Footer />
   </div>
@@ -18,7 +18,7 @@ import Features from "./Features.vue";
 import PricingPlans from './PricingPlans.vue';
 import HowItWorks from './HowItWorks.vue';
 import Statistics from './Statistics.vue';
-import Industries from './Industries.vue';
+import Industries from './offer.vue';
 import Footer from './Footer.vue';
 
 export default {

@@ -1,89 +1,111 @@
-.counterup {
-    // background-color: #f5f5f5; 
-    padding: 8rem 0 12rem; 
-    text-align: center; 
-  
-    .content {
-      position: relative;
+@import '@/assets/scss/_variables';
+
+.mission-vission-wrapper {
+  background: var(--color-white);
+  padding: 6.125rem 0;
+
+  @include desktop-small {
+    padding: 4rem 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 0 2rem;
+
+    @include desktop-small {
+      padding: 0 1rem;
+    }
+
+    .project-count-header-area {
+      text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      .counterup_title{
-        margin: 0 auto 3.75rem;
-        max-width: 32rem;
-        .title{
-          font-size: 60px;
-          font-weight: 700;
-          line-height: 1.2;
-          margin: 0;
-          color: rgb(29 53 87);
-        }
+      .title {
+        margin-bottom: 18px;
+        font-size: 3rem;
+        line-height: 3.75rem;
+        letter-spacing: -0.02em;
+        font-weight: 700;
       }
 
-      .count{
+      .brief {
+        width: 70%;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        letter-spacing: normal;
+        font-weight: 400;
+      }
+    }
+
+    .img_stats {
+      display: flex;
+      align-items: stretch;
+
+      @include desktop-small {
+        flex-direction: column;
+      }
+
+      .image {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex: 1;
+
+        @include desktop-small {
+          width: 100%;
+        }
+
+        .main-img {
+          width: 100%;
+        }
+      }
+
+      .stats {
+        display: grid;
+        align-items: stretch;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 2px;
+        flex: 1;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
 
-        .counterup_box{
-          width: 230px;
-          padding: 40px 30px;
-          border-radius: 10px;
-          background-color: #FFF;
-          box-shadow: 8px 8px 10px 0px rgba(29, 53, 87, 0.08);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        @include desktop-small {
+          grid-template-columns: 1fr;
+          width: 100%;
+        }
 
-          &:hover {
-            background-color: #FAF8F7;
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+        .stats_content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 6px;
+          background: var(--color-primary);
+          color: var(--color-white);
+          border-radius: 32px;
+          // padding: 1.5rem;
+          flex-grow: 1;
+          width: 100%;
+
+          .count {
+
+            @include typography(display-lg, bold);
+
+            @include desktop-small {
+              @include typography(display-md, bold);
+            }
           }
 
-          .counterup_number{
-            font-size: 40px;
-            font-weight: 700;
-            line-height: 1.2;
-            --tw-text-opacity: 1;
-            color: #F75B1E;
-          }
-          .counterup_text{
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 1.2;
-            --tw-text-opacity: 1;
-            color: #2F85BC;
+          .details {
+            @include typography(text-lg, regular);
           }
         }
       }
-  
-      .counterup_shape{
-        position: absolute;
-        bottom: -45px;
-        left: -30px;
-        z-index: -10;
-        opacity: .6;
-      }
-      
-  
     }
-  }
 
-  @media (max-width:768px){
-    .counterup .content {
-      .counterup_title .title{
-        font-size: 40px;
-        line-height: 55px;
-      }
-
-      .count .counterup_box{
-        width: 100%;
-      }
-    }
-    
-   
   }
+}

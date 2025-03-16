@@ -6,7 +6,7 @@
     <PricingPlans />
     <HowItWorks />
     <Statistics />
-    <Industries />
+    <Offer />
     <Footer />
   </div>
 </template>
@@ -18,7 +18,7 @@ import Features from "./Features.vue";
 import PricingPlans from './PricingPlans.vue';
 import HowItWorks from './HowItWorks.vue';
 import Statistics from './Statistics.vue';
-import Industries from './Industries.vue';
+import Offer from './offer.vue';
 import Footer from './Footer.vue';
 
 export default {
@@ -29,7 +29,7 @@ export default {
     PricingPlans,
     HowItWorks,
     Statistics,
-    Industries,
+    Offer,
     Footer,
   },
 };

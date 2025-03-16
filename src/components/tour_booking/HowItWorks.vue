@@ -1,43 +1,63 @@
 <template>
-  <section class="how-it-works">
-    <div class="how-it-works-content container">
-      <h2>How It Works</h2>
-      
-      <div class="work_steps">
-        <div class="steps">
-          <div class="step">
-            <h3>Step 1</h3>
-            <p>Overhauling Your Company’s Operations to Higher Levels of Productivity through a Consolidated Management System It is our platform that changes the way organizations work by giving you a clear and effective way on how to manage all organizational activities.</p>
+  <section class="howitswork-block-section slide-up bg-white animate">
+    <div class="container">
+      <div class="howitswork-block-wrapper">
+
+        <div class="howitswork-block-content-parent">
+          <div class="howitswork-block-content-area">
+            <div class="howitswork-block-header">
+              <h4 class="sub-title">How it works</h4>
+              <h4 class="contenttitle-title">Content Creation with AI in <span>3 Steps</span></h4>
+              <div class="contenttitle-desc">
+                <p>Generate high-quality content in seconds. Whether it's social media posts or full-length articles,
+                  our AI creates copy that matches your unique needs.</p>
+              </div>
+            </div>
+
+            <div class="howitswork-block-details">
+              <div class="howitswork-block-item">
+
+                <div class="howitswork-item-serial">
+                  <h2 class="item-serial">01</h2>
+                </div>
+
+                <div class="howitswork-item-content">
+                  <h3 class="item-title">Choose Your Format</h3>
+                  <p class="item-desc">Pick from over 50 templates designed for blogs, social media posts, articles, and
+                    more.</p>
+                </div>
+              </div>
+              <!-- End contact-block-item -->
+              <div class="howitswork-block-item">
+
+                <div class="howitswork-item-serial">
+                  <h2 class="item-serial">02</h2>
+                </div>
+
+                <div class="howitswork-item-content">
+                  <h3 class="item-title">Add Key Information</h3>
+                  <p class="item-desc">Provide a description, title, or keywords, and let AI tailor the content to your
+                    requirements.</p>
+                </div>
+              </div>
+              <!-- End contact-block-item -->
+              <div class="howitswork-block-item">
+
+                <div class="howitswork-item-serial">
+                  <h2 class="item-serial">03</h2>
+                </div>
+
+                <div class="howitswork-item-content">
+                  <h3 class="item-title">Edit &amp; Export</h3>
+                  <p class="item-desc">Review and refine your content, then easily save and export it. Track your
+                    progress and manage drafts effortlessly.</p>
+                </div>
+              </div>
+              <!-- End contact-block-item -->
+            </div>
           </div>
-          <div class="step">
-            <h3>Step 2</h3>
-            <p>First, our authorization model is built on the flexible ‘ Roles’ framework that allow to define available functions for the ‘Owner’, ‘Operation Manager’, ‘Office Staff’,'Tour Guide', and ‘Driver’ etc.</p>
-          </div>
-          <div class="step">
-            <h3>Step 3</h3>
-            <p>Seamless Job Management feature enables you to create structure jobs for your website and your affiliates or you can host them on your site. Enter specific data that can affect the operations of the team for example on vehicles, timetables, and duty rosters.</p>
-          </div>
-          <div class="step">
-            <h3>Step 4</h3>
-            <p>Vehicle coordinators are responsible for distributions and oversight of transportations because they ensure that vehicle activities are very well coordinated.</p>
-          </div>
-        </div>
-        <div class="steps">
-          <div class="step">
-            <h3>Step 8</h3>
-            <p>Real time communication is enhanced through our instant chat interface through which the owners, managers, affiliates and customers can easily coordinate on operations. At check in on the job date, drivers for instance use the integrated QR scanner.</p>
-          </div>
-          <div class="step">
-            <h3>Step 7</h3>
-            <p>Customers get a QR code which makes it rather easy to check in on the day of the job hence enhancing the satisfaction level.</p>
-          </div>
-          <div class="step">
-            <h3>Step 6</h3>
-            <p>Improved Customer Interaction includes friendly onboarding forms for pick-up points, with setup of pick-up orders included.</p>
-          </div>
-          <div class="step">
-            <h3>Step 5</h3>
-            <p>The Easy Affiliate Coordination is possible since the tool allows your affiliates to work independently, so long as they can communicate your team. The system adopted ensures that all buyers’ payments are held in a secure payment system until the performers deliver the agreed-upon work.</p>
+          <div class="howitswork-image ">
+            <img class="" src="/images/tour_booking/how_its_work_img.webp" alt="Image">
           </div>
         </div>
       </div>

@@ -1,0 +1,124 @@
+
+@import '@/assets/scss/_variables';
+
+.offers-section {  
+  padding: 100px 0;  
+  color: var(--color-white);
+
+  @include desktop-small {
+    padding: 5rem 0;
+  }
+
+  .offer-wrapper {
+    background: var(--color-primary);
+  // animation: offerslideIn 2.5s ease-in-out forwards;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 64px 0 64px;
+    border-radius: 8px;
+    position: relative;
+    // z-index: -1;
+    
+
+    @include desktop-small {
+      flex-direction: column;
+      gap: 42px;
+      overflow: hidden;
+    }
+
+
+    .ellipse {
+      position: absolute;
+      bottom: 0%;
+      right: 0;
+      z-index: 1;
+      // width: 100%;
+
+        @include desktop-small {
+          right: 50%;
+          transform: translate(50%, 0);
+        }
+    }
+
+     .offer-content-area {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 42px;
+
+      @include desktop-small {
+        text-align: center;
+      }
+
+      .offer-title {
+        @include typography('display-lg', bold);
+
+        @include desktop-small {
+          @include typography('display-md', bold);
+        }
+        
+      }
+
+      .brief {
+        @include typography('text-xl', regular);
+      }
+
+      .actions {
+        .offer-btn {
+          border: 1px solid var(--color-white);
+          border-radius: 8px;
+          display: inline;
+          appearance: none;
+          background: var(--bg-button);
+          color: var(--color-button);
+          text-decoration: none;
+          cursor: pointer;
+          line-height: 1.625rem;
+          padding: 16px;
+          align-items: center;
+        }
+      }
+
+      .cross-circle-arrow {
+        position: absolute;
+        bottom: 16%;
+        left: 18%;
+
+        @include desktop-small {
+          bottom: -11%;
+          left: 78%;
+        }
+      }
+    }
+
+    .offer-image-area {
+      margin-top: -162px;  
+      z-index: 2;    
+
+      @include desktop-small {
+        margin: 0;
+      }
+      
+      img {
+        height: 100%;
+
+        @include desktop-small {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+
+}
+
+@keyframes offerslideIn {
+  0% {
+    top: -100%;
+    left: -100%;
+  }
+  100% {
+    top: 0%;
+    left: 300%;
+  }
+}
