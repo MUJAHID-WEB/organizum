@@ -11,6 +11,7 @@
   @include desktop-small {
     position: fixed;
     z-index: 3;
+    padding: 0 !important;
     // background: var(--bg-primary);
   }
 
@@ -119,7 +120,7 @@
 
       @include desktop-small {
         padding: 16px;
-        border-radius: 32px;
+        border-radius: 0;
         background: #484848;
       }
 
