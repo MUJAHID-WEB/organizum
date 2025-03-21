@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <Hero />
-    <Features />
     <HowItWorks />
     <Statistics />
     <PricingPlans />
@@ -12,20 +11,18 @@
 </template>
 
 <script>
-import Header from './Header.vue';
-import Hero from './Hero.vue';
-import Features from "./Features.vue";
-import PricingPlans from './PricingPlans.vue';
-import HowItWorks from './HowItWorks.vue';
-import Statistics from './Statistics.vue';
-import Industries from './offer.vue';
-import Footer from './Footer.vue';
+import Header from './home/Header.vue';
+import Hero from './home/Hero.vue';
+import PricingPlans from './home/PricingPlans.vue';
+import HowItWorks from './home/HowItWorks.vue';
+import Statistics from './home/Statistics.vue';
+import Industries from './home/offer.vue';
+import Footer from './home/Footer.vue';
 
 export default {
   components: {
     Header,
     Hero,
-    Features,
     PricingPlans,
     HowItWorks,
     Statistics,

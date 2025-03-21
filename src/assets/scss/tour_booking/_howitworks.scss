@@ -1,216 +1,138 @@
-@import '@/assets/scss/_variables';
+@import "@/assets/scss/_variables";
 
-@keyframes bounce {
-  0% {
-    transform: translateY(100px); /* Start from below */
-    opacity: 0;
-  }
-  20% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(0);
-  }
-  80% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.howitswork-block-section {
-  background: var(--color-white);
+.howitswork_section {
+  display: flex;
+  flex-direction: column;
   padding: 80px 0;
-  position: relative;
 
-  @include desktop-small {
-    padding: 64px 0;
-  }
-
-  .howitswork-block-wrapper {
+  .howitworks {
     display: flex;
     flex-direction: column;
-    gap: 42px;
-    .block-title {
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: var(--color-text-light, #8F8F8F);
-      font-size: 96px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 17.28px;
-      text-transform: uppercase;
-      color: var(--color-white);
+    padding: 80px;
+    background: var(--color-gradient);
+    border-radius: 32px;
 
-      @include desktop-small{
-        display: none;
-      }
+    @include tablet{
+      padding: 64px 32px;
     }
 
-    .howitswork-block-content-parent {
+    @include mobile{
+      padding: 64px 16px;
+    }
+
+    .hiw_top {
       display: flex;
-      justify-content: space-between;
-      gap: 6rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
 
-      @include desktop-small {
-        flex-direction: column;
-        gap: 42px;
-      }
-
-      .howitswork-block-header {
-        .sub-title{
-          position: relative;
-          @include typography(display-xs, bold);
-          text-transform: uppercase;
-          margin-bottom: 24px;
-          margin-left: 40px;
-
-          @include mobile{
-            margin-bottom: 18px;
-          }
-
-          &::before {
-            content: "";
-            position: absolute;
-            height: 32px;
-            width: 32px;
-            top: 0;
-            left: -40px;
-            background: var(--color-primary);
-            border: 1px solid var(--color-black);
-            border-radius: 8px;
-          }
-
-          span{    
-            color: var(--color-text-dark);
-          }
-        }
-
-        .contenttitle-title {
-          @include typography(display-xl, medium);
-          color: var(--color-text-dark, #1F1F1F);
-
-          @include desktop-small {
-            @include typography(display-md, medium);
-          }
-
-          span {
-            color: var(--color-primary);
-            display: inline-block;
-            position: relative;
-          }
-        }
-
-        .contenttitle-desc {
-          @include typography(text-xl, normal);
-          margin-top: 18px;
-
-          @include tablet{
-            @include typography(text-md, normal);
-            margin-top: 24px;
-          }
-        }
-      }
-
-      .howitswork-block-content-area {
-        flex: 1;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 64px;
+      .hiw_title {
+        color: var(--color-white);
+        text-align: center;
+        max-width: 70%;
+        @include typography(display-lg, medium);
 
         @include desktop-small {
-          gap: 42px;
+          @include typography(display-sm, medium);
+        }
+      }
+      .hiw_card {
+        display: flex;
+        flex-direction: row;
+
+        @include desktop-small{
+          flex-direction: column;
         }
 
-        .howitswork-block-details {
+        .hiw_content {
           display: flex;
-          flex-wrap: wrap;
-          gap: 42px;
+          flex-direction: column;
+          justify-content: center;
+          background: var(--color-white);
+          padding: 64px;
+          gap: 24px;
+          flex: 1;
+          border-radius: 18px 0 0 18px;
 
-          .howitswork-block-item {
-            min-width: 200px;
-            width: calc(100% - 0px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            gap: 4rem;
-            transition: 0.5s ease-in-out;
-            animation: bounce 1s ease-in-out forwards;
+          @include desktop-small{
+            border-radius: 18px 18px 0 0;
+          }
 
-            &:nth-child(1) {
-              animation-delay: 1s;
+          @include tablet{
+            padding: 32px;
+          }
+
+          .hiw_content_subtitle {
+            @include typography(text-lg, medium);
+
+            @include desktop-small {
+              @include typography(text-md, medium);
             }
+          }
+          .hiw_content_title {
+            @include typography(display-xs, bold);
 
-            &:nth-child(2) {
-              animation-delay: 1.5s;
+            @include desktop-small {
+              @include typography(text-xl, bold);
             }
+          }
+          .hiw_content_desc {
+            .hiw_content_text {
+              @include typography(text-lg, regular);
 
-            &:nth-child(3) {
-              animation-delay: 2s;
-            }
-
-            @include desktop-small{
-              width: unset;
-            }
-
-            @include mobile {
-              width: 100%;
-              flex-direction: column;
-              align-items: start;
-              gap: 18px;
-            }
-
-            .howitswork-item-serial {
-              .item-serial {
-                text-align: center;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: var(--color-primary);
-                font-size: 72px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 90px;
-                letter-spacing: -1.44px;
-                color: var(--color-white);
-              }
-            }
-
-            .howitswork-item-content {
-              text-align: left;
-              display: flex;
-              flex-direction: column;
-              gap: 12px;
-
-              .item-title {
-                @include typography(display-xs, medium);
-              }
-
-              .item-desc {
+              @include desktop-small {
                 @include typography(text-md, regular);
-                color: var(--color-text-light, #8F8F8F);
               }
             }
           }
         }
-      }
-      .howitswork-image{
-        flex: 1;
-        align-items: center;
-        display: flex    ;
-        text-align: center;
-        transition: 0.5s ease-in-out;
-        animation: bounce 1s ease-in-out forwards;
-        opacity: 0;
-        animation-delay: 1s;
-        img{
-          max-width: 100%;
+        .hiw_img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--color-secondary);
+          padding: 64px;
+          flex: 1;
+          border-radius: 0 18px 18px 0;
+
+          @include desktop-small{
+            border-radius: 0 0 18px 18px;
+          }
+
+          @include tablet{
+            padding: 32px;
+          }
+
+          img {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        &:nth-child(odd){
+          flex-direction: row-reverse;
+
+          @include desktop-small{
+            flex-direction: column;
+          }
+          
+          .hiw_content{
+            border-radius: 0 18px 18px 0;
+
+            @include desktop-small{
+              border-radius: 18px 18px 0 0;
+            }
+            
+          }
+          .hiw_img{
+            border-radius: 18px 0 0 18px;
+
+            @include desktop-small{
+              border-radius: 0 0 18px 18px;
+            }
+          }
+
         }
       }
     }

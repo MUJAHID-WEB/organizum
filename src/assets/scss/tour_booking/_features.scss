@@ -1,122 +1,231 @@
-@import '@/assets/scss/_variables';
+@import "@/assets/scss/_variables";
 
-.features-section{
-  // background-image: url('/images/tour_booking/feature-bg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-  color: var(--color-black);
-  padding: 12rem 0;
+.features {
+  padding: 5rem 0 0;
+  padding-top: 86px;
 
   @include desktop-small {
-    padding: 7rem 1rem;
+    padding: 2.5rem 0 0;
   }
 
-  .features-wrapper {
+  .container {
     display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    align-self: stretch;
+    position: relative;
 
     @include desktop-small {
-      flex-direction: column;
-      // padding: 10rem 0;
+      row-gap: 2.625rem;
     }
 
-    .feature-left{
-      flex-basis: 40%;
-      position: relative;
+    .features-header-section {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      align-items: center;
+      margin-bottom: 48px;
 
       @include desktop-small {
-        flex-basis: 100%;
-      }
-
-      .feature-left-bottom-icon {
-        position: absolute;
-        bottom: 0%;
-        left: 44%;
-
-        @include desktop-small {
-          display: none;
-        }
-        
-      }
-
-      .subtitle {
-        background: rgba(0, 0, 0, 0.1);
-        padding: 8px 10px;
-
-        @include typography('display-xs', bold); 
-        display: inline;
-        border-radius: 8px;
-
-        @include desktop-small {
-          align-self: center;
-          justify-self: center;
-        }
-      }
-
-      .title {
-        position: relative;
-        @include typography(display-lg, bold);
-        margin-top: 18px;
-        margin-bottom: 24px;
-
-        @include desktop-small {
-          @include typography('display-md', bold);
-        }
-      }
-
-      .brief {
-        @include typography(text-xl, regular);
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+        gap: 24px;
       }
 
       .block-title {
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--color-primary);
-        @include typography(display-xxl, bold);
-        display: flex;
-        color: transparent;
-        text-transform: uppercase;
+        @include typography(display-lg, medium);
+        font-family: var(--secondary-font);
         color: var(--color-white);
-        transform: rotate(270deg) translateY(-15%) translateX(-80%);
-        transform-origin: left top;
-
-        @include desktop-small{
-          display: none;
-        }
-      }
-    }
-
-    .feature-right{
-      flex-basis: 65%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-
-      @include desktop-small {
-        flex-basis: 100%;
-      }
-
-      .feature-item {
-        flex-basis: 48%;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+        flex-basis: 40%;
 
         @include desktop-small {
-          flex-basis: 100%
+          @include typography(display-sm, medium);
         }
 
-        .title {
-          @include typography(display-sm, bold);
-          height: 75px;
+        span {
+          display: block;
+          font-family: var(--secondary-font);
+          color: var(--color-primary);
+          @include typography(display-xl, medium);
+
+          @include desktop-small {
+            display: inline;
+            @include typography(display-sm, medium);
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex-basis: 50%;
+
+        .features-section-description {
+          // opacity: 0;
+          p {
+            color: var(--color-tertiary);
+            @include typography(text-xl, regular);
+
+            @include mobile {
+              @include typography(text-md, regular);
+            }
+          }
         }
 
-        .brief {
-          @include typography(text-lg, regular);
+        .button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          padding: 16px;
+          border-radius: 8px;
+          @include typography(text-lg, medium);
+
+          @include desktop-small {
+            @include typography(text-md, medium);
+          }
+
+          background: var(--color-primary);
+          color: var(--color-white);
+          position: relative;
         }
       }
     }
 
+    .features-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem;
+      // background: var(--feature-bg-container);
+      overflow: hidden;
+      width: 100%;
+
+      padding-left: 32px;
+      padding-right: 32px;
+
+      @include desktop-small {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .feature-track {
+        display: flex;
+        gap: 1.5rem;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 8px;
+
+        .feature {
+          flex: 0 0 calc(100% / 3 - 1rem);
+          display: flex;
+          align-items: flex-start;
+          gap: 1.5rem;
+          cursor: pointer;
+          border-radius: 16px;
+          align-self: stretch;
+          transition: transform 0.3s ease;
+
+          &:hover .feature-image img {
+            transform: scale(1.05);
+          }
+
+          @include desktop-small {
+            width: 100%;
+            flex: 0 0 calc(100% / 2 - 1rem);
+          }
+
+          @include tablet {
+            flex: 0 0 100%;
+          }
+
+          .feature-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            text-align: left;
+            position: relative;
+            border-radius: 10px;
+            width: 100%;
+            background: var(--color-white);
+            padding: 20px;
+            gap: 16px;
+
+            @include desktop-small {
+              flex-direction: column;
+              align-items: flex-start;
+              width: 100%;
+              padding: 10px;
+            }
+
+            .feature-image {
+              display: flex;
+              justify-content: flex-start;
+              overflow: hidden;
+              border-radius: 8px;
+              width: 100%;
+
+              @include desktop-small {
+                width: 100%;
+                border-radius: 4px;
+              }
+
+              img {
+                width: 60px;
+                height: 60px;
+              }
+            }
+
+            .feature-title {
+              font-family: var(--secondary-font);
+              @include typography(display-xs, bold);
+              color: var(--color-primary);
+
+              @include desktop-small {
+                @include typography(text-lg, bold);
+              }
+            }
+
+            .feature-description {
+              @include typography(text-md, normal);
+              color: var(--color-text-dark);
+            }
+          }
+        }
+      }
+    }
+    .feature-slider-pagination {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      @include tablet {
+        display: none;
+      }
+
+      .bullet {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: var(--bg-body);
+        transition: background 0.3s ease;
+        cursor: pointer;
+
+        &.active {
+          background: var(--color-primary);
+        }
+      }
+    }
   }
 }
