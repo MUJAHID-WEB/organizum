@@ -30,6 +30,7 @@
       @include desktop-small {
         width: 100%;
         flex-direction: column;
+        align-items: start;
         margin-bottom: 10px;
         gap: 24px;
       }

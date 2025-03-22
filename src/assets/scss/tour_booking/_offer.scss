@@ -13,6 +13,16 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
+
+    @include desktop-small{
+      gap: 32px;
+    }
+
+    .title {
+      color: var(--color-text-dark);
+      text-align: center;
+      @include typography('display-lg', bold);
+    }
     
     .offer_top{
       background: var(--color-gradient);
@@ -20,14 +30,13 @@
       justify-content: space-between;
       padding: 64px;
       gap: 32px;
-      border-radius: 8px;
+      border-radius: 32px;
       position: relative;
       
 
       @include desktop-small {
         flex-direction: column;
-        gap: 42px;
-        overflow: hidden;
+        padding: 32px 16px;
       }
 
   
@@ -92,7 +101,8 @@
         align-items: center;
   
         @include desktop-small {  
-          margin: 0;  
+          flex: none;
+          height: 350px;
         }  
           
         img {
@@ -122,21 +132,35 @@
       flex-direction: row;
       gap: 64px;
 
+      @include desktop-small{
+        flex-direction: column;
+        gap: 32px;
+      }
+
       .offer_btm_card{
         display: flex;
         flex-direction: column;
         gap: 32px;
         flex: 1;
         border: 2px solid var(--color-primary);
-        border-radius: 8px;
+        border-radius: 32px;
         padding: 32px;
+
+        @include desktop-small{
+          padding: 24px 16px;
+          gap: 16px;
+        }
 
         .offer_btm_img{
           width: 100%;
           height: 350px;
           border: 2px solid var(--color-black);
-          border-radius: 8px;
+          border-radius: 18px;
           overflow: hidden;
+
+          @include desktop-small{
+            height: 200px;
+          }
 
           img{
             width: 100%;

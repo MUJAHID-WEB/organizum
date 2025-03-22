@@ -4,6 +4,7 @@
         <div class="container">
 
             <div class="offer-wrapper">
+                <h3 class="title">How can Bookinpro help you?</h3>
                 <div class="offer_top">
                     <div class="offer-content-area">
                         <h2 class="offer-title">
