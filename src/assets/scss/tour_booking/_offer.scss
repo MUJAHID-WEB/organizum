@@ -1,124 +1,178 @@
 
 @import '@/assets/scss/_variables';
 
-.offers-section {  
+.offers-section {   
   padding: 100px 0;  
-  color: var(--color-white);
+  color: var(--color-white); 
 
-  @include desktop-small {
-    padding: 5rem 0;
-  }
+  @include desktop-small { 
+    padding: 5rem 0; 
+  } 
 
   .offer-wrapper {
-    background: var(--color-primary);
-  // animation: offerslideIn 2.5s ease-in-out forwards;
     display: flex;
-    justify-content: space-between;
-    padding: 64px 64px 0 64px;
-    border-radius: 8px;
-    position: relative;
-    // z-index: -1;
+    flex-direction: column;
+    gap: 64px;
     
-
-    @include desktop-small {
-      flex-direction: column;
-      gap: 42px;
-      overflow: hidden;
-    }
-
-
-    .ellipse {
-      position: absolute;
-      bottom: 0%;
-      right: 0;
-      z-index: 1;
-      // width: 100%;
-
-        @include desktop-small {
-          right: 50%;
-          transform: translate(50%, 0);
-        }
-    }
-
-     .offer-content-area {
+    .offer_top{
+      background: var(--color-gradient);
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      padding: 64px;
+      gap: 32px;
+      border-radius: 8px;
       position: relative;
-      gap: 42px;
-
-      @include desktop-small {
-        text-align: center;
-      }
-
-      .offer-title {
-        @include typography('display-lg', bold);
-
-        @include desktop-small {
-          @include typography('display-md', bold);
-        }
-        
-      }
-
-      .brief {
-        @include typography('text-xl', regular);
-      }
-
-      .actions {
-        .offer-btn {
-          border: 1px solid var(--color-white);
-          border-radius: 8px;
-          display: inline;
-          appearance: none;
-          background: var(--bg-button);
-          color: var(--color-button);
-          text-decoration: none;
-          cursor: pointer;
-          line-height: 1.625rem;
-          padding: 16px;
-          align-items: center;
-        }
-      }
-
-      .cross-circle-arrow {
-        position: absolute;
-        bottom: 16%;
-        left: 18%;
-
-        @include desktop-small {
-          bottom: -11%;
-          left: 78%;
-        }
-      }
-    }
-
-    .offer-image-area {
-      margin-top: -162px;  
-      z-index: 2;    
-
-      @include desktop-small {
-        margin: 0;
-      }
       
-      img {
-        height: 100%;
 
-        @include desktop-small {
-          width: 100%;
-        }
+      @include desktop-small {
+        flex-direction: column;
+        gap: 42px;
+        overflow: hidden;
       }
 
+  
+       .offer-content-area { 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        position: relative; 
+        gap: 42px; 
+        flex: 1;
+   
+        @include desktop-small { 
+          text-align: center; 
+        } 
+  
+        .offer-title { 
+          @include typography('display-lg', bold); 
+  
+          @include desktop-small { 
+            @include typography('display-md', bold); 
+          } 
+          
+        } 
+    
+        .brief { 
+          @include typography('text-xl', regular); 
+        } 
+  
+        .actions { 
+          .offer-btn { 
+            border: 1px solid var(--color-white);
+            border-radius: 8px; 
+            display: inline; 
+            appearance: none; 
+            background: var(--bg-button); 
+            color: var(--color-button); 
+            text-decoration: none; 
+            cursor: pointer; 
+            line-height: 1.625rem; 
+            padding: 16px; 
+            align-items: center; 
+          }  
+        }  
+  
+        .cross-circle-arrow {  
+          position: absolute; 
+          bottom: 15%; 
+          left: 16rem; 
+  
+          @include desktop-small {  
+            bottom: -11%; 
+            left: 78%; 
+          }  
+        }  
+      } 
+  
+      .offer-image-area {  
+        display: flex;
+        flex: 1;  
+        position: relative;  
+        height: 500px;
+        align-items: center;
+  
+        @include desktop-small {  
+          margin: 0;  
+        }  
+          
+        img {
+          width: 100%;
+          position: absolute;
+          opacity: 0;
+          animation: imageAnimation 9s infinite;
+        }
+    
+        img:nth-child(1) {
+          animation-delay: 0s;
+        }
+    
+        img:nth-child(2) {
+          animation-delay: 3s;
+        }
+    
+        img:nth-child(3) {
+          animation-delay: 6s;
+        }
+      
+      }
     }
+
+    .offer_btm{
+      display: flex;
+      flex-direction: row;
+      gap: 64px;
+
+      .offer_btm_card{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex: 1;
+        border: 2px solid var(--color-primary);
+        border-radius: 8px;
+        padding: 32px;
+
+        .offer_btm_img{
+          width: 100%;
+          height: 350px;
+          border: 2px solid var(--color-black);
+          border-radius: 8px;
+          overflow: hidden;
+
+          img{
+            width: 100%;
+          }
+        }
+        .offer_btm_title{
+          color: var(--color-primary);
+          @include typography('display-md', bold); 
+  
+          @include desktop-small { 
+            @include typography('display-sm', bold); 
+          } 
+        }
+        .offer_btm_dsc{
+          color: var(--color-text-dark);
+          @include typography('text-xl', regular);
+        }
+      }
+    }
+
+    
   }
 
 }
 
-@keyframes offerslideIn {
+@keyframes imageAnimation {
   0% {
-    top: -100%;
-    left: -100%;
+    opacity: 0;
+  }
+  16.67% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
   }
   100% {
-    top: 0%;
-    left: 300%;
+    opacity: 0;
   }
 }

@@ -12,7 +12,7 @@
 
       <div class="img_stats">
         <div class="image">
-          <img class="main-img" src="/images/tour_booking/mv.png" alt="Mission Vission Image">
+          <img class="main-img" src="/images/tour_booking/web-04.png" alt="Mission Vission Image">
         </div>
 
         <div class="stats">

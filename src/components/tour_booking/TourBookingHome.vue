@@ -4,8 +4,8 @@
     <Hero />
     <HowItWorks />
     <Statistics />
-    <PricingPlans />
-    <Industries />
+    <!-- <PricingPlans /> -->
+    <Offer />
     <Footer />
   </div>
 </template>
@@ -16,7 +16,7 @@ import Hero from './home/Hero.vue';
 import PricingPlans from './home/PricingPlans.vue';
 import HowItWorks from './home/HowItWorks.vue';
 import Statistics from './home/Statistics.vue';
-import Industries from './home/offer.vue';
+import Offer from './home/offer.vue';
 import Footer from './home/Footer.vue';
 
 export default {
@@ -26,7 +26,7 @@ export default {
     PricingPlans,
     HowItWorks,
     Statistics,
-    Industries,
+    Offer,
     Footer,
   },
 };

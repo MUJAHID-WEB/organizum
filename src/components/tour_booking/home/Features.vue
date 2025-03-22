@@ -24,9 +24,8 @@
           </a>
 
         </div>
-
-
       </div>
+
       <div class="features-container">
         <div class="feature-track">
           <div class="feature">
@@ -81,15 +80,76 @@
 
             </div>
           </div>
+          <div class="feature">
+            <div class="feature-container">
+              <div class="feature-image">
+                <img class="" src="/images/tour_booking/fi1.svg">
+              </div>
 
+              <h4 class="feature-title">Unlock Potential, Elevate Productivity 05</h4>
+              <p class="feature-description">
+                Lorem Ipsum is simply dummy text
+              </p>
+
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-container">
+              <div class="feature-image">
+                <img class="" src="/images/tour_booking/fi1.svg">
+              </div>
+
+              <h4 class="feature-title">Unlock Potential, Elevate Productivity 06</h4>
+              <p class="feature-description">
+                Lorem Ipsum is simply dummy text
+              </p>
+
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-container">
+              <div class="feature-image">
+                <img class="" src="/images/tour_booking/fi1.svg">
+              </div>
+
+              <h4 class="feature-title">Unlock Potential, Elevate Productivity 07</h4>
+              <p class="feature-description">
+                Lorem Ipsum is simply dummy text
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="track_btm">
+          <div class="track_button">
+            <button class="btn_left">
+
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 14L1 8L7 2" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </button>
+
+            <button class="btn_right">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 14L8 8L2 2" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+
+          </div>
+          <div class="pagination">
+            <div class="mark">
+
+            </div>
+          </div>
         </div>
 
 
       </div>
 
-
-
-      <div class="feature-slider-pagination"></div>
     </div>
 
   </div>
@@ -102,92 +162,79 @@ export default {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-
-
   const track = document.querySelector(".feature-track");
   const items = document.querySelectorAll(".feature");
-  const totalItems = Math.min(items.length, 6);
-  const visibleItems = 3;
+  const totalItems = items.length;
+  const visibleItems = 3; // Always show 3 items at a time
   let currentIndex = 0;
 
-  const paginationContainer = document.querySelector(".feature-slider-pagination");
-  let autoSlideTimer;
+  const btnLeft = document.querySelector(".btn_left");
+  const btnRight = document.querySelector(".btn_right");
+  const mark = document.querySelector(".mark");
 
-  let autoSlideEnabled = true;
-  let autoSlideInterval = 3000;
+  // Disable left button initially
+  btnLeft.disabled = true;
 
-
-  function cloneItems() {
-    for (let i = 0; i < visibleItems; i++) {
-      const clone = items[i % totalItems].cloneNode(true);
-      track.appendChild(clone);
-    }
-  }
-
-  cloneItems();
-
-  function updateSliderPosition() {
-    const itemWidth = items[0].offsetWidth + 24;
-    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    updateBullets();
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalItems;
-    updateSliderPosition();
-  }
-
-  function generateBullets() {
-    paginationContainer.innerHTML = "";
-    for (let i = 0; i < totalItems; i++) {
-      const bullet = document.createElement("div");
-      bullet.classList.add("bullet");
-      if (i === currentIndex) bullet.classList.add("active");
-      bullet.setAttribute("data-index", i);
-      bullet.addEventListener("click", function () {
-        currentIndex = i;
-        updateSliderPosition();
-      });
-      paginationContainer.appendChild(bullet);
-    }
-  }
-
-
-  function updateBullets() {
-    const bullets = document.querySelectorAll(".bullet");
-    bullets.forEach((bullet, index) => {
-      bullet.classList.toggle("active", index === currentIndex);
+  // Set the width of the track to fit exactly 3 items
+  function setTrackWidth() {
+    const itemWidth = track.offsetWidth / visibleItems; // Width of one item
+    track.style.width = `${visibleItems * itemWidth}px`;
+    items.forEach((item) => {
+      item.style.width = `${itemWidth}px`; // Set each item's width
     });
   }
 
-  function startAutoSlide() {
-    if (autoSlideEnabled) {
-      stopAutoSlide();
-      autoSlideTimer = setInterval(() => {
-        nextSlide();
-      }, autoSlideInterval);
+  function updateSliderPosition() {
+    const itemWidth = track.offsetWidth / visibleItems; // Width of one item
+    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    updateButtons();
+    updatePagination();
+  }
+
+  function nextSlide() {
+    if (currentIndex < totalItems - visibleItems) {
+      currentIndex++;
+      updateSliderPosition();
     }
   }
 
-  function stopAutoSlide() {
-    clearInterval(autoSlideTimer);
+  function prevSlide() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSliderPosition();
+    }
   }
 
-  function restartAutoSlide() {
-    stopAutoSlide();
-    startAutoSlide();
+  function updateButtons() {
+    // Disable/enable buttons based on currentIndex
+    btnLeft.disabled = currentIndex === 0;
+    btnRight.disabled = currentIndex === totalItems - visibleItems;
   }
 
+  function updatePagination() {
+    const paginationWidth = ((currentIndex + visibleItems) / totalItems) * 100;
+    mark.style.width = `${paginationWidth}%`;
+  }
 
-  document.querySelector(".features-container").addEventListener("mouseenter", stopAutoSlide);
-  document.querySelector(".features-container").addEventListener("mouseleave", startAutoSlide);
+  // Event listeners for navigation buttons
+  btnLeft.addEventListener("click", function () {
+    prevSlide();
+  });
 
+  btnRight.addEventListener("click", function () {
+    nextSlide();
+  });
+
+  // Update slider position on window resize
   window.addEventListener("resize", function () {
+    setTrackWidth(); // Recalculate track width on resize
     updateSliderPosition();
   });
 
-  generateBullets();
-  startAutoSlide();
+  // Initialize
+  setTrackWidth();
+  updateButtons();
+  updatePagination();
 });
 </script>
 

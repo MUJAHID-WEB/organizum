@@ -46,6 +46,7 @@
     .img_stats {
       display: flex;
       align-items: stretch;
+      gap: 24px;
 
       @include desktop-small {
         flex-direction: column;
@@ -54,6 +55,8 @@
       .image {
         display: flex;
         flex: 1;
+        border: 1px solid var(--color-primary);
+        border-radius: 32px;
 
         @include desktop-small {
           width: 100%;
@@ -61,6 +64,7 @@
 
         .main-img {
           width: 100%;
+          border-radius: 32px;
         }
       }
 
@@ -84,7 +88,7 @@
           justify-content: center;
           flex-direction: column;
           gap: 6px;
-          background: var(--color-primary);
+          background: var(--color-gradient);
           color: var(--color-white);
           border-radius: 32px;
           // padding: 1.5rem;
