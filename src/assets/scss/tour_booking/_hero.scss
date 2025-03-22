@@ -11,7 +11,7 @@
 .hero .hero-container {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
 
   @include desktop-small {
     flex-direction: column;
@@ -48,6 +48,7 @@
       letter-spacing: -0.02em;
       font-weight: 700;
       color: #1f1f1f;
+      text-transform: uppercase;
     }
 
     p {
@@ -56,6 +57,7 @@
       letter-spacing: normal;
       font-weight: 400;
       color: #000;
+      max-width: 80%;
     }
 
     .hero_buttons {
@@ -70,6 +72,7 @@
 
     .button {
       align-self: center;
+      text-decoration: none;
       display: flex;
       align-items: center;
       padding: 16px 28px;
@@ -133,7 +136,7 @@
   background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
   text-decoration: none;
   color: #FFF;
-  padding: 40px 24px;
+  padding: 37px 24px;
   display: flex;
   gap: 10px;
   align-items: start;
@@ -276,7 +279,8 @@
 }
 
 .stats-section .stat-part .md-card img {
-  width: 100%;
+    width: 100%;
+    border-radius: 24px;
 }
 
 .stat-card {
@@ -364,6 +368,11 @@
 
 .stats-section .stat-part .lg-card {
   flex: 60%;
+
+  img{
+    width: 100%;
+    border-radius: 24px;
+  }
 }
 
 .hero .hero-container .hero-right .hero-box-right .stat-part:nth-child(2) .stat-card {

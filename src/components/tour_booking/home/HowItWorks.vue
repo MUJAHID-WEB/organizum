@@ -28,7 +28,7 @@
 
             </div>
             <div class="hiw_img">
-              <img src="/images/tour_booking/hiw.webp" />
+              <img src="/images/tour_booking/login.png" />
             </div>
           </div>
           <div class="hiw_card">
@@ -53,7 +53,7 @@
 
             </div>
             <div class="hiw_img">
-              <img src="/images/tour_booking/hiw.webp" />
+              <img src="/images/tour_booking/dashboard.png" />
             </div>
           </div>
           <div class="hiw_card">

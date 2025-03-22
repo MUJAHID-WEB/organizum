@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   // padding: 1.5rem 0;
-  // background: var(--panel-header-bg) !important;
+  background: var(--color-white);
 
   @include desktop-small {
     position: fixed;
@@ -71,7 +71,7 @@
       align-items: center;
       width: 100%;
       padding: 20px 2rem;
-      // background: var(--color-transparent);
+      background: var(--color-white);
       border-radius: 0 0 32px 32px;
 
       @include desktop-small {
@@ -331,8 +331,7 @@
   left: 0;
   right: 0;
   // padding: 1.5rem 0;
-  background: var(--bg-primary);
-  // background: var(--panel-header-bg) !important;
+  background: var(--color-white);
   z-index: 100;
 
   @include desktop-small {

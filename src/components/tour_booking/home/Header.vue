@@ -97,25 +97,19 @@
 
         <div class="menu ">
           <div class="menu-item ">
-            <a class="menu-item__link " href="/en/about-us">
-              About
+            <a class="menu-item__link " href="/home">
+              Home
             </a>
           </div>
 
           <div class="menu-item ">
-            <a class="menu-item__link " href="/en#features">
-              Features
+            <a class="menu-item__link " href="/about">
+              About Us
             </a>
           </div>
 
           <div class="menu-item ">
-            <a class="menu-item__link " href="/en/#modular_pricing">
-              Pricing
-            </a>
-          </div>
-
-          <div class="menu-item ">
-            <a class="menu-item__link " href="/en/contact">
+            <a class="menu-item__link " href="/contact">
               Contact Us
             </a>
           </div>

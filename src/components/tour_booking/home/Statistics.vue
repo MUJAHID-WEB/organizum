@@ -4,15 +4,14 @@
     <div class="container">
       <div class="project-count-header-area">
 
-        <h3 class="title">Statistics Show Reliability.</h3>
+        <h3 class="title">Bookinpro is where <br>your customers are</h3>
 
-        <p class="brief">Statistics clearly emphasize the stability and trustworthiness of outcomes. showcasing
-          consistent reliability across various measurements.</p>
+        <p class="brief">Lorem Ipsum is simply dummy text lorem Ipsum is simply dummy text</p>
       </div>
 
       <div class="img_stats">
         <div class="image">
-          <img class="main-img" src="/images/tour_booking/web-04.png" alt="Mission Vission Image">
+          <img class="main-img" src="/images/tour_booking/location.svg" alt="Mission Vission Image">
         </div>
 
         <div class="stats">

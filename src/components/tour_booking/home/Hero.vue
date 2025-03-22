@@ -4,7 +4,7 @@
       <div class="hero-text hero_text_left">
         <div class="hero_text_top">
           <h1 class="hero-title">
-            Code Your Way to Success: Learn Coding with Our Courses!
+            Start your Business <br>Skip the stress
           </h1>
           <p class="">Empower yourself with our comprehensive coding courses designed for all skill levels. From
             beginner basics to advanced techniques, embark on a transformative journey towards coding mastery. Start
@@ -31,7 +31,7 @@
         <div class="hero-box">
           <div class="first-box">
             <a href="#modular_pricing">
-              <h3>Get ready to sweat! Push your limits and embrace the energy!</h3>
+              <h3>Get ready to run without any cost!</h3>
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
                 <rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#E3FF33" />
                 <path d="M30.7112 29.7051L32.7478 22.1043L25.147 20.0677" stroke="#E3FF33" stroke-width="1.6"
@@ -49,8 +49,8 @@
                   <h3><span>2000</span>+</h3>
                 </div>
                 <div class="second-box-bottom">
-                  <h3>Training Now</h3>
-                  <p><span>Get ready to sweat</span> at and feel great Get ready to sweat and feel great!!</p>
+                  <h3>Stay with us</h3>
+                  <!-- <p><span>Get ready to sweat</span> at and feel great Get ready to sweat and feel great!!</p> -->
                 </div>
               </div>
              
@@ -63,13 +63,15 @@
           <div class="stat-part">
             <div class="mini-card empty-box"></div>
             <div class="image lg-card">
-              <img src="/images/tour_booking/hero-img1.webp" alt="Customer Interaction" />
+              <img src="/images/tour_booking/car_plane.png" alt="Customer Interaction" />
 
             </div>
             <div class="image md-card">
-              <img src="/images/tour_booking/hero-img2.webp" alt="Customer Interaction" />
+              <img src="/images/tour_booking/travel.jpg" alt="Customer Interaction" />
             </div>
-
+            <div class="image md-card">
+              <img src="/images/tour_booking/booking.jpg" alt="Customer Interaction" />
+            </div>
            
           </div>
         </div>
@@ -77,21 +79,21 @@
         <div class="hero-box-right">
           <div class="stat-part">
             <div class="stat-card gradient mini-card">
-              <h2><span class="count-up">47</span>K</h2>
-              <p>Students Enrolled</p>
+              <h2><span class="count-up">100</span>+</h2>
+              <p>Transport Companies</p>
             </div>
           </div>
           <div class="stat-part">
             <div class="stat-card gradient lg-card num-box">
               <h2 class="text-lg-stat">
-                <span class="count-up">247</span>K
+                <span class="count-up">1000</span>+
               </h2>
-              <p>Code Challenges Completed</p>
+              <p>Areas we cover</p>
             </div>
           </div>
           <div class="stat-part card-4">
             <div class="image lg-card">
-              <img src="/images/tour_booking/hero-img3.webp" alt="Team Collaboration" />
+              <img src="/images/tour_booking/car.jpeg" alt="Team Collaboration" />
             </div>
           </div>
         

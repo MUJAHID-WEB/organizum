@@ -36,6 +36,7 @@
       gap: 32px;
       border-radius: 32px;
       position: relative;
+      overflow: hidden;
       
 
       @include desktop-small {
@@ -113,7 +114,7 @@
           width: 100%;
           position: absolute;
           opacity: 0;
-          animation: imageAnimation 9s infinite;
+          animation: imageAnimation 30s infinite;
         }
     
         img:nth-child(1) {
@@ -121,11 +122,11 @@
         }
     
         img:nth-child(2) {
-          animation-delay: 3s;
+          animation-delay: 10s;
         }
     
         img:nth-child(3) {
-          animation-delay: 6s;
+          animation-delay: 20s;
         }
       
       }
@@ -193,14 +194,18 @@
 @keyframes imageAnimation {
   0% {
     opacity: 0;
+    transform: translateY(100%); 
   }
   16.67% {
     opacity: 1;
+    transform: translateY(0); 
   }
   33.33% {
     opacity: 0;
+    transform: translateY(-100%); 
   }
   100% {
     opacity: 0;
+    transform: translateY(-100%); 
   }
 }
