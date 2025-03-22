@@ -4,8 +4,8 @@
     <Hero />
     <HowItWorks />
     <Statistics />
-    <!-- <PricingPlans /> -->
     <Offer />
+    <PricingPlans />
     <Footer />
   </div>
 </template>

@@ -18,42 +18,10 @@
               fill="#FFF"></path>
           </svg>
           <a class="email" href="mailto:support@profgrowthhub.com" target="_blank"
-            rel="noopener noreferrer">support@profgrowthhub.com
+            rel="noopener noreferrer">support@bookinpro.com
           </a>
         </div>
 
-
-        <div class="menu ">
-
-
-
-          <div class="menu-item ">
-            <a class="menu-item__link " href="/en/about-us">
-              About
-            </a>
-          </div>
-
-          <div class="menu-item ">
-            <a class="menu-item__link " href="/en#features">
-              Features
-            </a>
-          </div>
-
-          <div class="menu-item ">
-            <a class="menu-item__link " href="/en/#modular_pricing">
-              Pricing
-            </a>
-          </div>
-
-          <div class="menu-item ">
-            <a class="menu-item__link " href="/en/contact">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="header_btm">
         <div class="social_links">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <g clip-path="url(#clip0_16031_3839)">
@@ -117,11 +85,40 @@
           </svg>
         </div>
 
+      </div>
+
+      <div class="header_btm">
 
         <div class="logo-container header-logo">
           <a class="logo" href="/en">
             Bookinpro
           </a>
+        </div>
+
+        <div class="menu ">
+          <div class="menu-item ">
+            <a class="menu-item__link " href="/en/about-us">
+              About
+            </a>
+          </div>
+
+          <div class="menu-item ">
+            <a class="menu-item__link " href="/en#features">
+              Features
+            </a>
+          </div>
+
+          <div class="menu-item ">
+            <a class="menu-item__link " href="/en/#modular_pricing">
+              Pricing
+            </a>
+          </div>
+
+          <div class="menu-item ">
+            <a class="menu-item__link " href="/en/contact">
+              Contact Us
+            </a>
+          </div>
         </div>
 
         <div class="header-buttons ">

@@ -6,7 +6,7 @@
   color: var(--color-white); 
 
   @include desktop-small { 
-    padding: 5rem 0; 
+    padding: 4rem 0; 
   } 
 
   .offer-wrapper {
@@ -22,6 +22,10 @@
       color: var(--color-text-dark);
       text-align: center;
       @include typography('display-lg', bold);
+
+      @include desktop-small { 
+        @include typography('display-md', bold); 
+      } 
     }
     
     .offer_top{
