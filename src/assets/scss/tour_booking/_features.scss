@@ -2,7 +2,6 @@
 
 .features {
   padding: 5rem 0 0;
-  padding-top: 86px;
 
   @include desktop-small {
     padding: 2.5rem 0 0;
@@ -89,7 +88,7 @@
           @include desktop-small {
             @include typography(text-md, medium);
           }
-
+          text-decoration: none;
           background: var(--color-primary);
           color: var(--color-white);
           position: relative;
