@@ -26,16 +26,17 @@
       align-items: center;
 
       .title {
-        background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
-
+        text-transform: uppercase;
+        color: var(--color-primary);
         margin-bottom: 18px;
         font-size: 3rem;
         line-height: 3.75rem;
         letter-spacing: -0.02em;
         font-weight: 700;
+
+        @include desktop-small{
+          @include typography(display-md, bold);
+        }
       }
 
       .brief {
@@ -56,7 +57,7 @@
       gap: 64px;
 
       @include desktop-small {
-        // flex-direction: column;
+        flex-direction: column;
         // padding: 32px 16px;
         gap: 32px;
       }
@@ -109,10 +110,7 @@
           }
 
           .count {
-            background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            color: var(--color-secondary);
             @include typography(display-lg, bold);
 
             @include desktop-small {

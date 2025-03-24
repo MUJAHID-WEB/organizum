@@ -37,16 +37,12 @@
 
       .block-title {
         @include typography(display-lg, bold);
-    
-        // color: var(--color-white);
-        background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        text-transform: uppercase;
+        color: var(--color-primary);
         flex-basis: 40%;
 
         @include desktop-small {
-          @include typography(display-sm, bold);
+          @include typography(display-md, bold);
         }
 
       }
@@ -83,9 +79,16 @@
             @include typography(text-md, medium);
           }
           text-decoration: none;
-          background: var(--color-gradient);
-          color: var(--color-white);
+          // background: var(--color-gradient);
+          color: var(--color-text-dark);
+          border: 1px solid var(--color-black);
           position: relative;
+
+          svg{
+            fill{
+              color: var(--color-text-dark);
+            }
+          }
         }
       }
     }

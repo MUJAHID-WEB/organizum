@@ -19,11 +19,12 @@
     }
 
     .title {
-      // color: var(--color-text-dark);
-      background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      color: var(--color-primary);
+      // background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+      //   background-clip: text;
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: rgba(0, 0, 0, 0);
+      text-transform: uppercase;
       text-align: center;
       @include typography('display-lg', bold);
 
@@ -76,11 +77,11 @@
   
         .actions { 
           .offer-btn { 
-            // border: 1px solid var(--color-white);
+            border: 1px solid var(--color-white);
             border-radius: 8px; 
             display: inline; 
             appearance: none; 
-            background: var(--color-gradient); 
+            // background: var(--color-gradient); 
             color: var(--color-white); 
             text-decoration: none; 
             cursor: pointer; 
@@ -111,8 +112,13 @@
   
         @include desktop-small {  
           flex: none;
+          height: 600px;
+        }  
+        @include mobile {  
+          flex: none;
           height: 350px;
         }  
+
           
         img {
           width: 100%;
