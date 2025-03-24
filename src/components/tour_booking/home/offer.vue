@@ -4,7 +4,34 @@
         <div class="container">
 
             <div class="offer-wrapper">
-                <!-- <h3 class="title">How can Bookinpro help you?</h3> -->
+                <h3 class="title">How can Bookinpro help you?</h3>
+                <div class="offer_btm">
+                    <div class="offer_btm_card">
+                        <div class="offer_btm_img">
+                            <img src="/images/tour_booking/web_01.png">
+                        </div>
+                        <h3 class="offer_btm_title">
+                            Choose Pre-Built Websites
+                        </h3>
+                        <p class="offer_btm_dsc">
+                            Lorem Ipsum is simply dummy text lorem Ipsum is simply dummy text
+                        </p>
+                    </div>
+
+                    <div class="offer_btm_card">
+                        <div class="offer_btm_img">
+                            <img src="/images/tour_booking/web-02.png">
+                        </div>
+                        <h3 class="offer_btm_title">
+                            Order for custom websites
+                        </h3>
+                        <p class="offer_btm_dsc">
+                            Lorem Ipsum is simply dummy text lorem Ipsum is simply dummy text
+                        </p>
+                    </div>
+
+                </div>
+                
                 <div class="offer_top">
                     <div class="offer-content-area">
                         <h2 class="offer-title">
@@ -91,32 +118,7 @@
                     </div>
 
                 </div>
-                <div class="offer_btm">
-                    <div class="offer_btm_card">
-                        <div class="offer_btm_img">
-                            <img src="/images/tour_booking/web_01.png">
-                        </div>
-                        <h3 class="offer_btm_title">
-                            Choose Pre-Built Websites
-                        </h3>
-                        <p class="offer_btm_dsc">
-                            Lorem Ipsum is simply dummy text lorem Ipsum is simply dummy text
-                        </p>
-                    </div>
-
-                    <div class="offer_btm_card">
-                        <div class="offer_btm_img">
-                            <img src="/images/tour_booking/web-02.png">
-                        </div>
-                        <h3 class="offer_btm_title">
-                            Order for custom websites
-                        </h3>
-                        <p class="offer_btm_dsc">
-                            Lorem Ipsum is simply dummy text lorem Ipsum is simply dummy text
-                        </p>
-                    </div>
-
-                </div>
+                
 
 
 
