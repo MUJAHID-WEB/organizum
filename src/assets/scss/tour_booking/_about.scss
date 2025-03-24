@@ -12,13 +12,13 @@
     .about_wrapper{
       display: flex;
       gap: 32px;
-      background: var(--color-secondary);
-      padding: 64px;
-      border-radius: 32px;
+      // background: var(--color-secondary);
+      // padding: 64px;
+      // border-radius: 32px;
 
       @include desktop-small{
         flex-direction: column;
-        padding: 64px 16px;
+        // padding: 64px 16px;
       }
       
 
@@ -36,7 +36,7 @@
           gap: 10px;
   
           .about_subtitle {
-            color: var(--color-white);
+            color: var(--color-secondary);
             @include typography(text-xl, regular);
   
             @include mobile {
@@ -46,7 +46,12 @@
   
           .about_title {
             @include typography(display-lg, bold);
-            color: var(--color-white);
+            // color: var(--color-primary);
+
+            background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
             flex-basis: 40%;
     
             @include desktop-small {
@@ -140,7 +145,7 @@
                 @include typography(text-md, medium);
               }
               text-decoration: none;
-              background: var(--color-primary);
+              background: var(--color-gradient);
               color: var(--color-white);
               position: relative;
             }
@@ -151,7 +156,7 @@
       .about_review {
         flex-basis: 30%;
         position: relative;
-        background: var(--color-white);
+        background: var(--color-secondary);
         border-radius: 18px;
         padding: 64px 40px;
         margin-top: 50px;
@@ -184,7 +189,7 @@
     
             .review {
               @include typography(text-lg, medium);
-    
+              color: var(--color-white);
                 @include desktop-small {
                   @include typography(text-md, medium);
                 }
@@ -209,14 +214,14 @@
               }
               .reviewer_name {
                 @include typography(text-xl, bold);
-      
+                color: var(--color-white);
                   @include desktop-small {
                     @include typography(text-lg, bold);
                   }
               }
               .address {
                 @include typography(text-lg, medium);
-      
+                color: var(--color-white);
                   @include desktop-small {
                     @include typography(text-md, medium);
                   }
@@ -232,7 +237,7 @@
               height: 120px;
     
               svg {
-                background: var(--color-secondary);
+                background: var(--color-white);
                 padding: 20px;
                 border-radius: 50%;
                 width: 80px;
@@ -265,8 +270,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: transparent;
-            border: 2px solid var(--color-black);
+            background-color: var(--color-white);
+            border: 2px solid var(--color-white);
             border-radius: 50%;
             padding: 8px;
             cursor: pointer;
@@ -274,7 +279,7 @@
             height: 60px;
       
             &:hover {
-              background-color: var(--color-secondary);
+              background-color: var(--color-primary);
               border-color: var(--color-primary);
             }
             &:disabled {

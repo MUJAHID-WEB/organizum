@@ -32,9 +32,9 @@
       align-items: center;
       width: 100%;
       padding: 13px 2rem;
-      border-bottom: 1px solid #DEE5ED;
-      background: var(--color-gradient);
-      border-radius: 0 0 32px 32px;
+      border-bottom: 1px solid var(--color-text-dark);
+      // background: var(--color-gradient);
+      // border-radius: 0 0 32px 32px;
 
       @include desktop-small {
         display: none;
@@ -48,7 +48,7 @@
         a {
           text-decoration: none;
           @include typography(text-md, medium);
-          color: var(--color-white);
+          color: var(--color-text-dark);
         }
 
       }
@@ -91,7 +91,7 @@
         }
 
 
-          color: var(--color-text-dark);
+          color: var(--color-secondary);
           text-decoration: none;
           @include typography(display-lg, bold);
 
@@ -169,9 +169,9 @@
         display: flex;
         align-items: center;
         // gap: 1rem;
-        padding: 10px;
-        border-radius: 32px;
-        background: var(--color-gradient);
+        // padding: 10px;
+        // border-radius: 32px;
+        // background: var(--color-gradient);
 
         @include desktop-small {
           padding: 22px;
@@ -180,7 +180,7 @@
         .btn {
           background: var(--color-white);
           color: var(--color-text-dark);
-          border: 1px solid var(--color-black);
+          // border: 1px solid var(--color-black);
           text-decoration: none;
           padding: 8px 32px;
           border-radius: 32px !important;
@@ -194,7 +194,7 @@
 
         .signup {
           color: var(--color-white);
-          background: var(--color-primary);
+          background: var(--color-gradient);
           border: 2px solid var(--color-white);
           margin-left: 1rem;
         }

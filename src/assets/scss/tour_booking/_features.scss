@@ -1,10 +1,10 @@
 @import "@/assets/scss/_variables";
 
 .features {
-  padding: 5rem 0 0;
+  padding: 10rem 0 0;
 
   @include desktop-small {
-    padding: 2.5rem 0 0;
+    padding: 5rem 0 0;
   }
 
   .container {
@@ -14,6 +14,7 @@
     row-gap: 2rem;
     align-self: stretch;
     position: relative;
+    padding: 0;
 
     @include desktop-small {
       row-gap: 2.625rem;
@@ -23,7 +24,7 @@
       display: flex;
       justify-content: space-between;
       text-align: left;
-      align-items: center;
+      align-items: flex-start;
       margin-bottom: 48px;
 
       @include desktop-small {
@@ -35,26 +36,19 @@
       }
 
       .block-title {
-        @include typography(display-lg, medium);
-        font-family: var(--secondary-font);
-        color: var(--color-white);
+        @include typography(display-lg, bold);
+    
+        // color: var(--color-white);
+        background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
         flex-basis: 40%;
 
         @include desktop-small {
-          @include typography(display-sm, medium);
+          @include typography(display-sm, bold);
         }
 
-        span {
-          display: block;
-          font-family: var(--secondary-font);
-          color: var(--color-primary);
-          @include typography(display-xl, medium);
-
-          @include desktop-small {
-            display: inline;
-            @include typography(display-sm, medium);
-          }
-        }
       }
 
       .description {
@@ -67,7 +61,7 @@
         .features-section-description {
           // opacity: 0;
           p {
-            color: var(--color-tertiary);
+            color: var(--color-text-dark);
             @include typography(text-xl, regular);
 
             @include mobile {
@@ -89,7 +83,7 @@
             @include typography(text-md, medium);
           }
           text-decoration: none;
-          background: var(--color-primary);
+          background: var(--color-gradient);
           color: var(--color-white);
           position: relative;
         }
@@ -159,7 +153,7 @@
             position: relative;
             border-radius: 10px;
             width: 100%;
-            background: var(--color-white);
+            background: var(--color-secondary);
             padding: 20px;
             gap: 16px;
 
@@ -189,9 +183,8 @@
             }
 
             .feature-title {
-              font-family: var(--secondary-font);
               @include typography(display-xs, bold);
-              color: var(--color-primary);
+              color: var(--color-white);
 
               @include desktop-small {
                 @include typography(text-lg, bold);
@@ -200,7 +193,7 @@
 
             .feature-description {
               @include typography(text-md, normal);
-              color: var(--color-text-dark);
+              color: var(--color-white);
             }
           }
         }
@@ -225,7 +218,7 @@
             justify-content: center;
             align-items: center;
             background-color: transparent;
-            border: 2px solid var(--color-grey);
+            border: 2px solid var(--color-primary);
             border-radius: 50%;
             padding: 8px;
             cursor: pointer;
@@ -234,7 +227,7 @@
       
             &:hover {
               background-color: var(--color-primary);
-              border-color: var(--color-primary);
+              border-color: var(--color-secondary);
             }
             &:disabled {
               opacity: 0.5;
@@ -248,7 +241,7 @@
           position: relative;
           height: 16px;
           background-color: transparent;
-          border: 1px solid var(--color-grey);
+          border: 1px solid var(--color-secondary);
           border-radius: 20px;
           flex-grow: 1;
           margin-left: 16px;
@@ -258,7 +251,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: var(--color-grey);
+            background-color: var(--color-primary);
             border-radius: 20px;
             transition: width 0.3s ease;
           }

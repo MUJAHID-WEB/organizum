@@ -126,7 +126,7 @@
             <button class="btn_left">
 
               <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 14L1 8L7 2" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round"
+                <path d="M7 14L1 8L7 2" stroke="#008080" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
 
@@ -134,7 +134,7 @@
 
             <button class="btn_right">
               <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 14L8 8L2 2" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round"
+                <path d="M2 14L8 8L2 2" stroke="#008080" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round"></path>
               </svg>
             </button>

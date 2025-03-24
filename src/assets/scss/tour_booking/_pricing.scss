@@ -38,7 +38,12 @@
         }
 
         .block-title {
-          color: var(--color-primary);
+          // color: var(--color-primary);
+          background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: rgba(0, 0, 0, 0);
+
           @include typography(display-lg, bold);
           @include desktop-small {
             @include typography(display-sm, bold);
@@ -65,11 +70,11 @@
       width: 100%;
 
       .faq-accordion-item {
-        border-bottom: 1px solid var(--color-tertiary);
+        border-bottom: 1px solid var(--color-secondary);
 
         &:first-child {
-          border-top: 1px solid var(--color-tertiary);
-          border-bottom: 1px solid var(--color-tertiary);
+          border-top: 1px solid var(--color-secondary);
+          border-bottom: 1px solid var(--color-secondary);
         }
 
         @include desktop-small {

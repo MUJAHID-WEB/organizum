@@ -6,17 +6,17 @@
   .howitworks {
     display: flex;
     flex-direction: column;
-    padding: 80px;
-    background: var(--color-gradient);
-    border-radius: 32px;
+    // padding: 80px;
+    // background: var(--color-gradient);
+    // border-radius: 32px;
 
-    @include tablet{
-      padding: 64px 32px;
-    }
+    // @include tablet{
+    //   padding: 64px 32px;
+    // }
 
-    @include mobile{
-      padding: 64px 16px;
-    }
+    // @include mobile{
+    //   padding: 64px 16px;
+    // }
 
     .hiw_top {
       display: flex;
@@ -26,18 +26,27 @@
       gap: 60px;
 
       .hiw_title {
-        color: var(--color-white);
+        // color: var(--color-text-dark);
+        background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        
         text-align: center;
         max-width: 70%;
-        @include typography(display-lg, medium);
+        text-transform: uppercase;
+        @include typography(display-lg, bold);
 
         @include desktop-small {
-          @include typography(display-sm, medium);
+          @include typography(display-sm, bold);
         }
       }
       .hiw_card {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+        width: 100%;
 
         @include desktop-small{
           flex-direction: column;
@@ -46,15 +55,15 @@
         .hiw_content {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           background: var(--color-white);
-          padding: 64px;
+          // padding: 64px;
           gap: 24px;
           flex: 1;
-          border-radius: 18px 0 0 18px;
+          // border-radius: 18px 0 0 18px;
 
           @include desktop-small{
-            border-radius: 18px 18px 0 0;
+            // border-radius: 18px 18px 0 0;
           }
 
           @include tablet{
@@ -62,17 +71,19 @@
           }
 
           .hiw_content_subtitle {
-            @include typography(text-lg, medium);
-
+            @include typography(text-xl, medium);
+            color: var(--color-text-dark);
+            text-transform: uppercase;
             @include desktop-small {
-              @include typography(text-md, medium);
+              @include typography(text-lg, medium);
             }
           }
           .hiw_content_title {
-            @include typography(display-xs, bold);
+            color: var(--color-secondary);
+            @include typography(display-md, bold);
 
             @include desktop-small {
-              @include typography(text-xl, bold);
+              @include typography(display-sm, bold);
             }
           }
           .hiw_content_desc {
@@ -89,13 +100,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background: var(--color-secondary);
-          padding: 64px;
+          // background: var(--color-secondary);
+          // padding: 64px;
           flex: 1;
-          border-radius: 0 18px 18px 0;
+          // border-radius: 0 18px 18px 0;
 
           @include desktop-small{
-            border-radius: 0 0 18px 18px;
+            // border-radius: 0 0 18px 18px;
           }
 
           @include tablet{

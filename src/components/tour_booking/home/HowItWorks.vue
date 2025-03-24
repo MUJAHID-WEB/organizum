@@ -4,40 +4,15 @@
       <div class="howitworks">
         <div class="hiw_top">
           <h2 class="hiw_title">
-            A high-performance platform that scales with you.
+            What you get
           </h2>
           <div class="hiw_card">
             <div class="hiw_content">
               <h4 class="hiw_content_subtitle">
-                Create
+                online Booking
               </h4>
               <h3 class="hiw_content_title">
-                Create your Account that convert
-              </h3>
-              <ul class="hiw_content_desc">
-                <li class="hiw_content_text">
-                  Lorem Ipsum is simply dummy text
-                </li>
-                <li class="hiw_content_text">
-                  Lorem Ipsum is simply dummy text
-                </li>
-                <li class="hiw_content_text">
-                  Lorem Ipsum is simply dummy text
-                </li>
-              </ul>
-
-            </div>
-            <div class="hiw_img">
-              <img src="/images/tour_booking/login.png" />
-            </div>
-          </div>
-          <div class="hiw_card">
-            <div class="hiw_content">
-              <h4 class="hiw_content_subtitle">
-                Convert
-              </h4>
-              <h3 class="hiw_content_title">
-                Convert to Business by choosing your website
+                Online Booking System
               </h3>
               <ul class="hiw_content_desc">
                 <li class="hiw_content_text">
@@ -54,6 +29,31 @@
             </div>
             <div class="hiw_img">
               <img src="/images/tour_booking/dashboard.png" />
+            </div>
+          </div>
+          <div class="hiw_card">
+            <div class="hiw_content">
+              <h4 class="hiw_content_subtitle">
+                Branded App
+              </h4>
+              <h3 class="hiw_content_title">
+                Your Personalized Website
+              </h3>
+              <ul class="hiw_content_desc">
+                <li class="hiw_content_text">
+                  Lorem Ipsum is simply dummy text
+                </li>
+                <li class="hiw_content_text">
+                  Lorem Ipsum is simply dummy text
+                </li>
+                <li class="hiw_content_text">
+                  Lorem Ipsum is simply dummy text
+                </li>
+              </ul>
+
+            </div>
+            <div class="hiw_img">
+              <img src="/images/tour_booking/web-02.png" />
             </div>
           </div>
           <div class="hiw_card">
@@ -78,7 +78,7 @@
 
             </div>
             <div class="hiw_img">
-              <img src="/images/tour_booking/hiw.webp" />
+              <img src="/images/tour_booking/web-03.png" />
             </div>
           </div>
         </div>

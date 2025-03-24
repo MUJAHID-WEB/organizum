@@ -133,7 +133,7 @@
 
 .hero .hero-container .hero-box .first-box a {
   border-radius: 35px;
-  background: linear-gradient(0deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+  background: var(--color-secondary);
   text-decoration: none;
   color: #FFF;
   padding: 37px 24px;
@@ -165,7 +165,7 @@
 
 .hero .hero-container .hero-box .second-box a {
   border-radius: 35px;
-  background: linear-gradient(180deg, var(--color-text-dark) 0%, var(--color-primary) 100%);
+  background: var(--color-secondary);
   text-decoration: none;
   padding: 21px 24px;
   color: #FFF;
