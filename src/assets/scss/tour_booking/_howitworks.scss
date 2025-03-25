@@ -67,11 +67,11 @@
           }
 
           .hiw_content_subtitle {
-            @include typography(text-xl, medium);
+            @include typography(text-lg, bold);
             color: var(--color-text-dark);
             text-transform: uppercase;
             @include desktop-small {
-              @include typography(text-lg, medium);
+              @include typography(text-md, bold);
             }
           }
           .hiw_content_title {
