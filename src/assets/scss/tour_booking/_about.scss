@@ -37,10 +37,10 @@
   
           .about_subtitle {
             color: var(--color-secondary);
-            @include typography(text-xl, regular);
+            @include typography(text-xl, bold);
   
             @include mobile {
-              @include typography(text-lg, regular);
+              @include typography(text-lg, bold);
             }
           }
   
